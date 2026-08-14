@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NotifyX Modular Notification System Project — Flask, Vanilla JS, CSS, Asynchronous APIs. Elfrana De Ridwan." />
+  <title>NotifyX Notification System | Elfrana De Ridwan</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+<!-- ── NAVBAR ─────────────────────────────────── -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="{{ url_for('home') }}">EDR<span class="text-accent">.</span></a>
+    <div class="ms-auto">
+      <a href="{{ url_for('home') }}" class="btn-back"><i class="bi bi-arrow-left me-1"></i>Back to Portfolio</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── PROJECT HEADER ─────────────────────────── -->
+<section class="project-hero">
+  <div class="container" style="max-width:960px;">
+    <p class="label-tag mb-2">Personal Software Project &bull; Service &amp; Interface</p>
+    <h1 class="proj-hero-title">NotifyX System Console</h1>
+    <p class="proj-hero-sub">Modular &middot; Real-time &middot; Telemetry</p>
+
+    <!-- Meta strip -->
+    <div class="meta-strip row g-0 mt-4">
+      <div class="col-4 meta-cell text-center">
+        <div class="meta-key">Repository</div>
+        <div class="meta-val"><a href="https://github.com/elfranar/notify" target="_blank" class="text-decoration-none text-accent text-break">elfranar/notify</a></div>
+      </div>
+      <div class="col-4 meta-cell text-center">
+        <div class="meta-key">Timeline</div>
+        <div class="meta-val">August 2026</div>
+      </div>
+      <div class="col-4 meta-cell text-center" style="border:none">
+        <div class="meta-key">Primary Stack</div>
+        <div class="meta-val">Flask &bull; Vanilla JS &bull; CSS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container py-5" style="max-width:960px;">
+
+  <!-- Initial Project Description -->
+  <div class="mb-5 p-4 bg-light border-start border-primary border-3 rounded">
+    <p class="lead mb-0 text-dark" style="font-size: 1.05rem; line-height: 1.6;">
+      <strong>Project Overview:</strong> Designed and built NotifyX, a modular notification system console that broadcasts and routes real-time telemetry alerts to active system nodes. Developed as a self-taught, hands-on learning project to explore event-driven communication, frontend-backend routing, and visual state feedback in client-side UIs. The backend Flask API exposes routes to trigger success, error, info, or random status alerts, which are displayed as custom animated toast notifications on the frontend interface while logging request handshakes in the console terminal.
+    </p>
+  </div>
+
+  <!-- ── 1. ARCHITECTURE & EVENT FLOW ───────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>01</span> System Architecture &amp; Event Flow</div>
+    
+    <!-- Flow diagram wrapper using CSS flexbox for clean workflow -->
+    <div class="approach-pipeline mb-4">
+      <div class="approach-step">
+        <div class="approach-num mono-accent">01</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Console Trigger</h5>
+        <p class="small text-muted mb-0">User triggers an event by clicking a notification button on the portal.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">02</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Async API POST</h5>
+        <p class="small text-muted mb-0">Client Javascript dispatches an asynchronous POST request to the Flask server backend.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">03</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Telemetry Logging</h5>
+        <p class="small text-muted mb-0">Flask API receives the payload, logs the alert telemetry, and compiles response objects.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">04</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Terminal Output</h5>
+        <p class="small text-muted mb-0">The local Python backend outputs HTTP request handshakes to the powershell window.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">05</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Toast Render</h5>
+        <p class="small text-muted mb-0">Frontend client receives confirmation and mounts an animated toast with countdown progress bar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 2. INTERFACE & TELEMETRY LOGS ─────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>02</span> User Interface &amp; Terminal Verification</div>
+    
+    <!-- Row 1: Login Form screenshots -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='images/notify_console.png') }}" alt="NotifyX system console main panel" class="img-fluid rounded" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 1a — NotifyX Main Dashboard Interface</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='images/notify_success_toast.png') }}" alt="Success notification alert triggered" class="img-fluid rounded" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 1b — Success Alert Triggered with Green Toast Banner</p>
+      </div>
+    </div>
+
+    <!-- Row 2: Verification screen and console logs -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='images/notify_error_toast.png') }}" alt="Error notification alert triggered" class="img-fluid rounded" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 2a — Error Alert Triggered with Red Toast Banner</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='images/notify_info_toast.png') }}" alt="Info notification alert triggered" class="img-fluid rounded" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 2b — Info Alert Triggered with Blue Toast Banner</p>
+      </div>
+    </div>
+
+    <!-- Row 3: Random and Powershell logs -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='images/notify_random_toast.png') }}" alt="Random notification alert triggered" class="img-fluid rounded" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 3a — Random Alert Option Mounting Dynamic Message</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='images/notify_terminal_log.png') }}" alt="Powershell console window showing Flask requests" class="img-fluid rounded" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 3b — Powershell Console logging HTTP request handshakes</p>
+      </div>
+    </div>
+
+    <!-- Interface description -->
+    <div class="p-3 bg-light border-start border-accent border-3 rounded mb-4">
+      <p class="small text-muted mb-0" style="line-height:1.6">
+        <strong>Terminal-Based Verification:</strong> Since this is a learning experiment, all request payloads and route dispatches are logged directly in the local powershell console terminal. This allows me to verify that asynchronous client requests are successfully received, processed, and responded to by the Python Flask backend.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── 3. KEY ARCHITECTURAL FEATURES ─────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>03</span> Key Architectural Features</div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="skill-card h-100 p-4">
+          <div class="fs-3 text-accent mb-2"><i class="bi bi-window-stack"></i></div>
+          <h5 class="fw-bold mb-2">Modular Toast Injection</h5>
+          <p class="text-muted small mb-0" style="line-height: 1.6;">
+            Uses raw Vanilla JS to dynamically mount and dismiss alert toast blocks. Each alert includes an animated countdown timeline signifying when it will self-destroy.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-card h-100 p-4">
+          <div class="fs-3 text-accent mb-2"><i class="bi bi-arrows-expand"></i></div>
+          <h5 class="fw-bold mb-2">Asynchronous Handshakes</h5>
+          <p class="text-muted small mb-0" style="line-height: 1.6;">
+            Client-side triggers communicate through fetch API POST requests to Flask backend endpoints, returning JSON representations of status payloads.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-card h-100 p-4">
+          <div class="fs-3 text-accent mb-2"><i class="bi bi-terminal-fill"></i></div>
+          <h5 class="fw-bold mb-2">Console Debug Logging</h5>
+          <p class="text-muted small mb-0" style="line-height: 1.6;">
+            Optimized for local backend study. By executing the server locally, developers can inspect Flask requests in powershell to ensure routing handshakes function correctly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 4. CODE IMPLEMENTATION & REFLECTION ────── -->
+  <section class="proj-section" style="border:none;">
+    <div class="section-label"><span>04</span> Code Implementation &amp; Reflection</div>
+
+    <h5 class="fw-bold text-dark mb-2">Flask Telemetry Route Handler</h5>
+    <p class="text-muted small mb-3">
+      The following Python snippet shows the Flask routing logic processing notification requests and logging payloads to the console:
+    </p>
+
+    <!-- Code Block -->
+    <div class="code-wrap mb-4" style="background:#0f141c; color:#a5b4fc; padding:20px; border-radius:8px; border:1px solid #1e293b; font-family:SFMono-Regular, Consolas, monospace; font-size:0.85rem; overflow-x:auto;">
+<pre style="margin:0;"><span style="color:#6366f1;"># Flask route to trigger notification telemetry</span>
+<span style="color:#f43f5e;">@app.route</span>(<span style="color:#e11d48;">'/notify'</span>, methods=[<span style="color:#e11d48;">'POST'</span>])
+<span style="color:#f43f5e;">def</span> <span style="color:#10b981;">post_notification</span>():
+    data = request.get_json() <span style="color:#f43f5e;">or</span> {}
+    alert_type = data.get(<span style="color:#e11d48;">'type'</span>, <span style="color:#e11d48;">'info'</span>).lower()
+    
+    <span style="color:#6366f1;"># Log telemetry event to terminal console</span>
+    <span style="color:#f43f5e;">print</span>(<span style="color:#e11d48;">f"[TELEMETRY] Triggered {alert_type.upper()} notification event."</span>)
+    
+    <span style="color:#f43f5e;">return</span> jsonify({
+        <span style="color:#e11d48;">'status'</span>: <span style="color:#e11d48;">'success'</span>,
+        <span style="color:#e11d48;">'alert'</span>: alert_type
+    })</pre>
+    </div>
+
+    <!-- Personal Reflection -->
+    <div class="ana-card bg-white border rounded p-4">
+      <h5 class="fw-bold mb-3 text-dark"><i class="bi bi-journal-code me-2 text-accent"></i>Learning Reflection</h5>
+      <p class="small text-muted mb-2" style="line-height:1.7">
+        "Building NotifyX was an educational step in my programming path. While my academic core is in Chemistry and reactor simulations, developing this modular console helped me understand how server-side services communicate with frontend clients. Writing asynchronous request handlers and routing events dynamically in Javascript taught me crucial full-stack concepts while using local terminals for live debug logging."
+      </p>
+      <p class="small text-muted mb-0" style="line-height:1.7">
+        "Building this modular layout helped me appreciate the importance of clean event boundaries and responsive UI states. Running tests through local PowerShell command streams gave me a concrete understanding of how servers handle clients, helping bridge the gap between chemistry modeling computations and web software engineering."
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

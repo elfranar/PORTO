@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Papain Enzyme Isolation & Characterization Project — Biochemistry, UV-Vis Spectroscopy, Lowry Assay, Enzyme Activity. Elfrana De Ridwan." />
+  <title>Papain Enzyme Isolation &amp; Characterization | Elfrana De Ridwan</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+
+<!-- ── NAVBAR ─────────────────────────────────── -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">EDR<span class="text-accent">.</span></a>
+    <div class="ms-auto">
+      <a href="index.html" class="btn-back"><i class="bi bi-arrow-left me-1"></i>Back to Portfolio</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── PROJECT HEADER ─────────────────────────── -->
+<section class="project-hero">
+  <div class="container" style="max-width:960px;">
+    <p class="label-tag mb-2">Biochemistry Lab &bull; Group 7 (Kelompok 7)</p>
+    <h1 class="proj-hero-title">Isolasi &amp; Karakterisasi<br>Enzim Papain</h1>
+    <p class="proj-hero-sub">Isolated &middot; Quantified &middot; Characterized</p>
+
+    <!-- Meta strip -->
+    <div class="meta-strip row g-0 mt-4">
+      <div class="col-4 meta-cell text-center">
+        <div class="meta-key">Institution</div>
+        <div class="meta-val">Universitas Indonesia</div>
+      </div>
+      <div class="col-4 meta-cell text-center">
+        <div class="meta-key">Timeline</div>
+        <div class="meta-val">Semester 4 (2025)</div>
+      </div>
+      <div class="col-4 meta-cell text-center" style="border:none">
+        <div class="meta-key">Primary Tools</div>
+        <div class="meta-val">UV-Vis &bull; Centrifuge</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container py-5" style="max-width:960px;">
+
+  <!-- Initial Project Description -->
+  <div class="mb-5 p-4 bg-light border-start border-primary border-3 rounded">
+    <p class="lead mb-0 text-dark" style="font-size: 1.05rem; line-height: 1.6;">
+      <strong>Project Overview:</strong> Conducted end-to-end isolation and characterization of the papain enzyme (EC 3.4.22.2), a cysteine protease, extracted from local unripe papaya (<em>Carica papaya</em> L.) latex. The project evaluated optimal pH, temperature, and metal ion influences on enzyme activity to determine process viability for biochemical and industrial applications.
+    </p>
+  </div>
+
+  <!-- ── 1. ISOLATION WORKFLOW ─────────────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>01</span> Isolation Process Flow</div>
+    
+    <!-- Flow diagram wrapper using CSS flexbox for clean scientific workflow -->
+    <div class="approach-pipeline mb-4">
+      <div class="approach-step">
+        <div class="approach-num mono-accent">01</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Sampling</h5>
+        <p class="small text-muted mb-0">Harvest raw papaya, score skin to collect latex, and store at 4 &deg;C.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">02</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Dissolution</h5>
+        <p class="small text-muted mb-0">Saturate crude latex in 0.1 M Tris-HCl buffer (pH 7).</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">03</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Stirring</h5>
+        <p class="small text-muted mb-0">Stir homogenously for 30 minutes at a cooled 4 &deg;C.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">04</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Centrifugation</h5>
+        <p class="small text-muted mb-0">Centrifuge at 13,000 rpm for 15 minutes to separate solids.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">05</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Filtration</h5>
+        <p class="small text-muted mb-0">Filter and store the supernatant as crude enzyme extract.</p>
+      </div>
+    </div>
+
+    <!-- Centrifuge experimental evidence pictures -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="static/images/biochem_before_centrifuge.png" alt="Latex dissolution before centrifuge" class="img-fluid" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 1a — Uncentrifuged Papaya Latex Solution</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="static/images/biochem_after_centrifuge.png" alt="Supernatant crude papain after centrifuge" class="img-fluid" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 1b — Crude Supernatant After 13,000 rpm Centrifugation</p>
+      </div>
+    </div>
+    
+    <ul class="eng-list mt-3">
+      <li><strong>Latex Scoring:</strong> Fresh unripe papaya skin was scored horizontally, and the white latex was collected in clean containers at room temperature before cooling to preserve proteolytical activity.</li>
+      <li><strong>Buffer Selection:</strong> Tris-HCl buffer (0.1 M, pH 7) was utilized to maintain structural integrity and charge of the active site residues (specifically Cys25 and His159) during extraction.</li>
+      <li><strong>High-Speed Centrifugation:</strong> Centrifugation at 13,000 rpm separated insoluble cellular debris and starch particles, yielding a clear supernatant containing active crude papain.</li>
+    </ul>
+  </section>
+
+  <!-- ── 2. QUANTITATIVE ANALYSIS ──────────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>02</span> Quantitative Analysis (Lowry Method &amp; Activity)</div>
+    
+    <div class="row g-4 mb-4 align-items-center">
+      <!-- Chart column -->
+      <div class="col-md-5 text-center">
+        <div class="img-frame">
+          <img src="static/images/biochem_lowry_curve.png" alt="BSA Calibration Curve" class="img-fluid">
+        </div>
+        <p class="img-caption">Fig. 2 — BSA Calibration Curve</p>
+      </div>
+      
+      <!-- Text/Calculations column -->
+      <div class="col-md-7">
+        <div class="ana-card mb-3">
+          <div class="ana-card-title"><i class="bi bi-graph-up me-2"></i>BSA Calibration Curve (Lowry Assay)</div>
+          <p class="small text-muted mb-2">
+            Protein concentration was determined via the Lowry assay, utilizing Bovine Serum Albumin (BSA) standards measured at 700 nm wavelength.
+          </p>
+          <div class="p-2 bg-light rounded text-center mb-2">
+            <span class="mono-accent fw-bold text-accent" style="font-size:1.15rem">y = 1.2915x + 0.0418</span><br>
+            <span class="small text-muted">R<sup>2</sup> = 0.9816</span>
+          </div>
+          <p class="small text-muted mb-0">
+            The calibration curve exhibits high linearity (R<sup>2</sup> = 0.9816) across the BSA range (0.05 to 0.4 mg/mL).
+          </p>
+        </div>
+
+        <div class="ana-card">
+          <div class="ana-card-title"><i class="bi bi-shield-check me-2"></i>Activity Assay Method</div>
+          <p class="small text-muted mb-2">
+            Papain activity was determined through UV-Vis spectrophotometry at 280 nm wavelength, measuring the rate of casein 1% substrate hydrolysis at 37 &deg;C.
+          </p>
+          <div class="p-2 bg-light rounded text-center">
+            <span class="mono-accent fw-bold text-accent" style="font-size:0.85rem">Aktivitas (U/mL) = (Abs/min &times; V) / (1000 &times; v &times; l &times; &epsilon;)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quantitative Data Table -->
+    <div class="ana-card">
+      <div class="ana-card-title"><i class="bi bi-table me-2"></i>Protein Yield &amp; Enzyme Activity Data</div>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover bom-table mb-0 text-center">
+          <thead>
+            <tr>
+              <th>Trial</th>
+              <th>[Protein] (mg/mL)</th>
+              <th>Protein Mass (mg)</th>
+              <th>Enzyme Activity (U/mL)</th>
+              <th>Total Activity (U)</th>
+              <th>Specific Activity (U/mg)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-bold">Simplo</td>
+              <td class="mono-accent">7.42888</td>
+              <td class="mono-accent">742.888</td>
+              <td class="mono-accent">3.02013 &times; 10<sup>-8</sup></td>
+              <td class="mono-accent">3.02013 &times; 10<sup>-6</sup></td>
+              <td class="mono-accent">4.06539 &times; 10<sup>-9</sup></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">Duplo</td>
+              <td class="mono-accent">6.32078</td>
+              <td class="mono-accent">632.078</td>
+              <td class="mono-accent">2.23490 &times; 10<sup>-8</sup></td>
+              <td class="mono-accent">2.23490 &times; 10<sup>-6</sup></td>
+              <td class="mono-accent">3.53579 &times; 10<sup>-9</sup></td>
+            </tr>
+            <tr class="table-info font-weight-bold">
+              <td class="fw-bold text-accent">Rerata (Average)</td>
+              <td class="mono-accent text-accent fw-bold">6.86798</td>
+              <td class="mono-accent text-accent fw-bold">686.798</td>
+              <td class="mono-accent text-accent fw-bold">4.37919 &times; 10<sup>-9</sup></td>
+              <td class="mono-accent text-accent fw-bold">4.37919 &times; 10<sup>-7</sup></td>
+              <td class="mono-accent text-accent fw-bold">6.37625 &times; 10<sup>-10</sup></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small text-muted mt-2 mb-0 text-start">
+        *Note: The standard deviation of the measured enzyme activity is 5.55245 &times; 10<sup>-9</sup> U/mL.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── 3. ENZYME CHARACTERIZATION ────────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>03</span> Enzyme Characterization Results</div>
+
+    <!-- A. pH Profile Section -->
+    <div class="card mb-4 border-0 shadow-sm bg-light">
+      <div class="card-body p-4">
+        <h4 class="fw-bold mb-3 text-dark"><i class="bi bi-droplet-half text-accent me-2"></i>A. Influence of pH on Papain Activity</h4>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-5 text-center">
+            <div class="img-frame mb-2">
+              <img src="static/images/biochem_ph_chart.png" alt="pH Effect Chart" class="img-fluid">
+            </div>
+            <p class="img-caption">Fig. 3 — Influence of pH on Papain Activity</p>
+          </div>
+          <div class="col-md-7">
+            <h6 class="fw-bold text-accent mb-2">Scientific Explanation:</h6>
+            <p class="small text-muted mb-3" style="line-height: 1.6;">
+              Papain activity is highly dependent on pH, displaying an optimum at pH 8. The catalytic mechanism of papain relies on the thiolate-imidazolium ion pair (Cys25-S<sup>-</sup> / His159-ImH<sup>+</sup>) at the active site. At pH 8, the electrostatic environment promotes the formation of this nucleophilic ion pair, enabling efficient attack on the peptide carbonyl carbon. Lower pH (acidic) protonates Cys25, while higher pH (strongly basic) deprotonates His159, both disrupting the active site conformation and decreasing activity.
+            </p>
+            <!-- pH trial tubes gallery -->
+            <div class="row g-2">
+              <div class="col-6">
+                <img src="static/images/biochem_ph_before.png" alt="pH tubes before incubation" class="img-fluid rounded border" style="max-height: 150px; object-fit: contain; width: 100%;">
+                <span class="d-block small text-muted text-center mt-1">Before Incubation</span>
+              </div>
+              <div class="col-6">
+                <img src="static/images/biochem_ph_after.png" alt="pH tubes after incubation" class="img-fluid rounded border" style="max-height: 150px; object-fit: contain; width: 100%;">
+                <span class="d-block small text-muted text-center mt-1">After Incubation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B. Temperature Profile Section -->
+    <div class="card mb-4 border-0 shadow-sm bg-light">
+      <div class="card-body p-4">
+        <h4 class="fw-bold mb-3 text-dark"><i class="bi bi-thermometer-half text-accent me-2"></i>B. Influence of Incubation Temperature on Papain Activity</h4>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-5 text-center">
+            <div class="img-frame mb-2">
+              <img src="static/images/biochem_temp_chart.png" alt="Temperature Effect Chart" class="img-fluid">
+            </div>
+            <p class="img-caption">Fig. 4 — Influence of Temperature on Papain Activity</p>
+          </div>
+          <div class="col-md-7">
+            <h6 class="fw-bold text-accent mb-2">Scientific Explanation:</h6>
+            <p class="small text-muted mb-0" style="line-height: 1.6;">
+              The activity of papain increases with temperature, reaching an optimum at 50 &deg;C. Cysteine proteases like papain exhibit high thermal stability compared to other enzymes, which is attributed to the presence of three intramolecular disulfide bonds (Cys22–Cys63, Cys56–Cys95, and Cys153–Cys200) that stabilize its tertiary structure against heat denaturation up to 50 &deg;C. Beyond this temperature, thermal denaturation begins to disrupt the tertiary structure, causing loss of catalytic function.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C. Metal Ion Profile Section -->
+    <div class="card border-0 shadow-sm bg-light">
+      <div class="card-body p-4">
+        <h4 class="fw-bold mb-3 text-dark"><i class="bi bi-cpu text-accent me-2"></i>C. Influence of Metal Ions on Papain Activity</h4>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-5 text-center">
+            <div class="img-frame mb-2">
+              <img src="static/images/biochem_metal_chart.png" alt="Metal Ion Effect Chart" class="img-fluid">
+            </div>
+            <p class="img-caption">Fig. 5 — Influence of Metal Ions on Papain Activity</p>
+          </div>
+          <div class="col-md-7">
+            <h6 class="fw-bold text-accent mb-2">Scientific Explanation:</h6>
+            <p class="small text-muted mb-0" style="line-height: 1.6;">
+              Metal ions act as modulators of papain activity:
+            </p>
+            <ul class="small text-muted mt-2" style="line-height: 1.6; padding-left: 20px;">
+              <li class="mb-2"><strong>Calcium (Ca<sup>2+</sup>)</strong> acts as an <strong>activator</strong> because it binds to specific structural sites on papain, stabilizing its active conformation and protecting it against autolysis and thermal unfolding.</li>
+              <li class="mb-2"><strong>Mercury (Hg<sup>2+</sup>)</strong> is a <strong>strong inhibitor</strong> (heavy metal inactivation) because mercury has an extremely high affinity for sulfur. It binds covalently to the essential sulfhydryl group of Cys25 at the active site, completely and irreversibly blocking catalytic activity.</li>
+              <li><strong>Sodium (Na<sup>+</sup>)</strong> shows a <strong>neutral/negligible effect</strong> because monovalent ions do not specifically interact with the active site residues or alter the electrostatic stability of the tertiary structure.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 4. MATERIALS & REAGENTS ──────────────── -->
+  <section class="proj-section mt-5">
+    <div class="section-label"><span>04</span> Reagents &amp; Preparations List</div>
+    <div class="table-responsive mb-4">
+      <table class="table table-bordered table-striped bom-table mb-0">
+        <thead>
+          <tr>
+            <th>Reagent / Material Name</th>
+            <th>Required Amount</th>
+            <th>Application</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-600 text-dark">Padatan Tris Base</td>
+            <td class="mono-accent">18.171 gram</td>
+            <td>Preparation of 1500 mL Tris-HCl 0.1 M buffer stock</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">HCL 6 M / NaOH 6 M</td>
+            <td class="mono-accent">300 mL each</td>
+            <td>pH adjustment (pH 6, 7, 8, 9) for characterization buffers</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">Padatan CuSO₄ &bull; 5H₂O</td>
+            <td class="mono-accent">0.1 gram</td>
+            <td>Lowry Reagent formulation (Stock B)</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">Padatan NaOH</td>
+            <td class="mono-accent">2 gram</td>
+            <td>Lowry Reagent formulation (Stock A)</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">Padatan Na₂CO₃</td>
+            <td class="mono-accent">10 gram</td>
+            <td>Lowry Reagent formulation (Stock A)</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">Padatan Na₂K Tartrat</td>
+            <td class="mono-accent">0.2 gram</td>
+            <td>Lowry Reagent formulation (Stock C)</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">Bubuk Kasein (Sodium Caseinate)</td>
+            <td class="mono-accent">5 gram</td>
+            <td>Enzyme substrate (1% solution) for activity assays</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">BSA (Bovine Serum Albumin)</td>
+            <td class="mono-accent">100 mg</td>
+            <td>BSA standard solutions (0.05, 0.1, 0.2, 0.3, 0.4 mg/mL)</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">Padatan CaCl<sub>2</sub> &bull; 2H<sub>2</sub>O</td>
+            <td class="mono-accent">36.7525 mg</td>
+            <td>Preparation of 25 mL Ca<sup>2+</sup> activator solution (0.01 M)</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">Padatan NaCl</td>
+            <td class="mono-accent">14.61 mg</td>
+            <td>Preparation of 25 mL Na<sup>+</sup> salt solution (0.01 M)</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">Padatan HgCl<sub>2</sub></td>
+            <td class="mono-accent">67.875 mg</td>
+            <td>Preparation of 25 mL Hg<sup>2+</sup> inhibitor solution (0.01 M)</td>
+          </tr>
+          <tr>
+            <td class="fw-600 text-dark">Reagen Folin-Ciocalteu 1N</td>
+            <td class="mono-accent">10 mL</td>
+            <td>Protein color reagent for Lowry quantification</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Final documentation card with QR code -->
+    <div class="card border-0 shadow-sm bg-light">
+      <div class="card-body p-4 d-flex flex-column flex-md-row align-items-center gap-4">
+        <div class="text-center" style="max-width:180px;">
+          <img src="static/images/biochem_qrcode.png" alt="Documentation QR Code" class="img-fluid rounded border">
+        </div>
+        <div>
+          <h5 class="fw-bold mb-2">Project Documentation &amp; Verification</h5>
+          <p class="small text-muted mb-0" style="line-height: 1.6;">
+            All laboratory workflows, qualitative test results, spectrophotometer printouts, and data balances are fully documented. Scan the QR code or visit the project archive to access the full experimental log, raw dataset spreadsheet, and original project proposal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</div>
+
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer class="site-footer py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2" style="max-width: 960px;">
+    <span class="fw-600" style="color:var(--accent)">EDR<span style="color:var(--txt-muted)">.</span></span>
+    <span class="small txt-muted">Elfrana De Ridwan &copy; 2026 &mdash; All rights reserved.</span>
+    <div class="d-flex gap-3">
+      <a href="mailto:elfrana.de@ui.ac.id" class="footer-link"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://www.linkedin.com/in/elfrana-de-ridwan-ba3712145" target="_blank" class="footer-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/elfranar" target="_blank" class="footer-link"><i class="bi bi-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

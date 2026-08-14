@@ -1,0 +1,1790 @@
+{
+  "10": {
+    "Calcium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration EFB 10mm (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 127,
+          "orde1": 123.1001371672827,
+          "orde2": 125.36927279024013
+        },
+        {
+          "time": 10,
+          "concentration": 133.2,
+          "orde1": 142.5501801443888,
+          "orde2": 134.98572569430857
+        },
+        {
+          "time": 15,
+          "concentration": 134.6,
+          "orde1": 145.62332190130815,
+          "orde2": 138.52764781355953
+        },
+        {
+          "time": 20,
+          "concentration": 139,
+          "orde1": 146.10888382367705,
+          "orde2": 140.36923850083875
+        },
+        {
+          "time": 25,
+          "concentration": 143.8,
+          "orde1": 146.18560348033583,
+          "orde2": 141.49788476444652
+        }
+      ],
+      "parameters": {
+        "Csat": 146.2,
+        "K1": 0.36902977355663324,
+        "K2": 0.008233211995899421,
+        "R2_Orde_1": 0.9829172378767768,
+        "R2_Orde_2": 0.9973210474168817,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Sulfur": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct2)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 7,
+          "orde1": 7.4,
+          "orde2": 7.191489362234498
+        },
+        {
+          "time": 10,
+          "concentration": 7.1,
+          "orde1": 7.4,
+          "orde2": 7.194344515190658
+        },
+        {
+          "time": 15,
+          "concentration": 7.1,
+          "orde1": 7.4,
+          "orde2": 7.194344515190658
+        },
+        {
+          "time": 20,
+          "concentration": 7.2,
+          "orde1": 7.4,
+          "orde2": 7.1971225326900825
+        },
+        {
+          "time": 25,
+          "concentration": 7.4,
+          "orde1": 7.4,
+          "orde2": 7.202459335861969
+        }
+      ],
+      "parameters": {
+        "Csat": 7.4,
+        "K1": 7.3999999977094975,
+        "K2": 0.6658261777795361,
+        "R2_Orde_1": 0.9914749054547786,
+        "R2_Orde_2": 0.997026921315445,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Magnesium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 69.6,
+          "orde1": 97.29999999999674,
+          "orde2": 75.6859782160268
+        },
+        {
+          "time": 10,
+          "concentration": 89,
+          "orde1": 97.3,
+          "orde2": 85.14268909382767
+        },
+        {
+          "time": 15,
+          "concentration": 90.7,
+          "orde1": 97.3,
+          "orde2": 88.84289711733048
+        },
+        {
+          "time": 20,
+          "concentration": 91.5,
+          "orde1": 97.3,
+          "orde2": 90.81628526719305
+        },
+        {
+          "time": 25,
+          "concentration": 96.9,
+          "orde1": 97.3,
+          "orde2": 92.04296632956145
+        }
+      ],
+      "parameters": {
+        "Csat": 97.3,
+        "K1": 6.206096498126715,
+        "K2": 0.007197753990379131,
+        "R2_Orde_1": 0.8753954552363234,
+        "R2_Orde_2": 0.9865011018604953,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Silicon": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 2.09,
+          "orde1": 5.1899999999970445,
+          "orde2": 3.127455514679635
+        },
+        {
+          "time": 10,
+          "concentration": 4.19,
+          "orde1": 5.19,
+          "orde2": 3.902995114921873
+        },
+        {
+          "time": 15,
+          "concentration": 4.39,
+          "orde1": 5.19,
+          "orde2": 4.254684220667815
+        },
+        {
+          "time": 20,
+          "concentration": 5.09,
+          "orde1": 5.19,
+          "orde2": 4.455417470356481
+        },
+        {
+          "time": 25,
+          "concentration": 5.09,
+          "orde1": 5.19,
+          "orde2": 4.5852139268236405
+        }
+      ],
+      "parameters": {
+        "Csat": 5.19,
+        "K1": 5.63880171808327,
+        "K2": 0.05843196003824325,
+        "R2_Orde_1": 0.5116942087894316,
+        "R2_Orde_2": 0.9090691543516161,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Sodium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 0.9,
+          "orde1": 2.59999999994407,
+          "orde2": 1.2355823195156377
+        },
+        {
+          "time": 10,
+          "concentration": 1.6,
+          "orde1": 2.6,
+          "orde2": 1.6751115023109913
+        },
+        {
+          "time": 15,
+          "concentration": 1.8,
+          "orde1": 2.6,
+          "orde2": 1.9004593181701543
+        },
+        {
+          "time": 20,
+          "concentration": 2.2,
+          "orde1": 2.6,
+          "orde2": 2.0375093859677085
+        },
+        {
+          "time": 25,
+          "concentration": 2.4,
+          "orde1": 2.6,
+          "orde2": 2.1296564445180777
+        }
+      ],
+      "parameters": {
+        "Csat": 2.6,
+        "K1": 4.912485893919411,
+        "K2": 0.06965960289751941,
+        "R2_Orde_1": 0.068373663515226,
+        "R2_Orde_2": 0.9229555827636579,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Phosphorus": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 16.6,
+          "orde1": 16.71404188245931,
+          "orde2": 18.623033060780912
+        },
+        {
+          "time": 10,
+          "concentration": 21.6,
+          "orde1": 21.386739107651206,
+          "orde2": 20.66107287734095
+        },
+        {
+          "time": 15,
+          "concentration": 22.7,
+          "orde1": 22.693071801553934,
+          "orde2": 21.44329952628621
+        },
+        {
+          "time": 20,
+          "concentration": 23,
+          "orde1": 23.058279523115452,
+          "orde2": 21.857052703420763
+        },
+        {
+          "time": 25,
+          "concentration": 23.1,
+          "orde1": 23.160379608729695,
+          "orde2": 22.11305849763191
+        }
+      ],
+      "parameters": {
+        "Csat": 23.2,
+        "K1": 0.2549025456342865,
+        "K2": 0.03507637057181787,
+        "R2_Orde_1": 0.9998495014219856,
+        "R2_Orde_2": 0.9778546403844826,
+        "Model_Terbaik": "Orde 1"
+      }
+    },
+    "Iron": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 1.89,
+          "orde1": 3.2643212425727297,
+          "orde2": 3.6911746435306974
+        },
+        {
+          "time": 10,
+          "concentration": 3.39,
+          "orde1": 5.28815433907892,
+          "orde2": 5.163543571075419
+        },
+        {
+          "time": 15,
+          "concentration": 7.99,
+          "orde1": 6.542902293751943,
+          "orde2": 5.955390084089916
+        },
+        {
+          "time": 20,
+          "concentration": 8.59,
+          "orde1": 7.320828315652694,
+          "orde2": 6.449950741250263
+        },
+        {
+          "time": 25,
+          "concentration": 8.59,
+          "orde1": 7.8031314692832785,
+          "orde2": 0.01386340147232139
+        }
+      ],
+      "parameters": {
+        "Csat": 8.59,
+        "K1": 0.09561171326805479,
+        "K2": 0.017543226417941416,
+        "R2_Orde_1": 0.8781903701044127,
+        "R2_Orde_2": -0.965189812408719,
+        "Model_Terbaik": "Orde 1"
+      }
+    },
+    "Titanium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 0.1,
+          "orde1": 0.1,
+          "orde2": 0.011792745047219636
+        },
+        {
+          "time": 10,
+          "concentration": 0.1,
+          "orde1": 0.1,
+          "orde2": 0.021097514051092583
+        },
+        {
+          "time": 15,
+          "concentration": 0.1,
+          "orde1": 0.1,
+          "orde2": 0.028626528174645925
+        },
+        {
+          "time": 20,
+          "concentration": 0.1,
+          "orde1": 0.1,
+          "orde2": 0.09316797385093216
+        },
+        {
+          "time": 25,
+          "concentration": 0.1,
+          "orde1": 0.1,
+          "orde2": 0.10712808203998563
+        }
+      ],
+      "parameters": {
+        "Csat": 0.1,
+        "K1": 5368709.22,
+        "K2": 0.2673871906235512,
+        "R2_Orde_1": 1,
+        "R2_Orde_2": -1.281932820687894,
+        "Model_Terbaik": "Orde 1"
+      }
+    },
+    "Potassium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 447.5,
+          "orde1": 450.8791950510732,
+          "orde2": 484.65476638998626
+        },
+        {
+          "time": 10,
+          "concentration": 557,
+          "orde1": 545.5431307191016,
+          "orde2": 524.1696612123998
+        },
+        {
+          "time": 15,
+          "concentration": 558.2,
+          "orde1": 565.4182121478322,
+          "orde2": 538.8131747719832
+        },
+        {
+          "time": 20,
+          "concentration": 559.5,
+          "orde1": 569.5910669843768,
+          "orde2": 546.4460953693082
+        },
+        {
+          "time": 25,
+          "concentration": 559.8,
+          "orde1": 570.4671749665912,
+          "orde2": 551.1305416974636
+        }
+      ],
+      "parameters": {
+        "Csat": 570.7,
+        "K1": 0.31217326858494965,
+        "K2": 0.0019739120274952847,
+        "R2_Orde_1": 0.9984381731534977,
+        "R2_Orde_2": 0.9872560518621067,
+        "Model_Terbaik": "Orde 1"
+      }
+    },
+    "Aluminum": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 0.9,
+          "orde1": 0.7437883882189666,
+          "orde2": 0.9382417490344245
+        },
+        {
+          "time": 10,
+          "concentration": 1.2,
+          "orde1": 1.141813547407078,
+          "orde2": 1.18285565118149
+        },
+        {
+          "time": 15,
+          "concentration": 1.2,
+          "orde1": 1.3548096493307378,
+          "orde2": 1.295435573868514
+        },
+        {
+          "time": 20,
+          "concentration": 1.4,
+          "orde1": 1.4687907341626965,
+          "orde2": 1.360163284852288
+        },
+        {
+          "time": 25,
+          "concentration": 1.4,
+          "orde1": 1.5297856893855226,
+          "orde2": 1.402200685655473
+        }
+      ],
+      "parameters": {
+        "Csat": 1.6,
+        "K1": 0.12504827052258438,
+        "K2": 0.17722517015568562,
+        "R2_Orde_1": 0.9560340883057212,
+        "R2_Orde_2": 0.9760110859375408,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Chloride": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Csat (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 1.19,
+          "orde1": 0.99660711149121,
+          "orde2": 1.324599233602601
+        },
+        {
+          "time": 10,
+          "concentration": 1.89,
+          "orde1": 1.6818581933037826,
+          "orde2": 1.8719143545419055
+        },
+        {
+          "time": 15,
+          "concentration": 2.09,
+          "orde1": 2.1530258577836108,
+          "orde2": 2.1709169052519233
+        },
+        {
+          "time": 20,
+          "concentration": 2.29,
+          "orde1": 2.4769931946379526,
+          "orde2": 2.3593472242890527
+        },
+        {
+          "time": 25,
+          "concentration": 2.29,
+          "orde1": 2.6997479447211643,
+          "orde2": 2.4889691115073864
+        }
+      ],
+      "parameters": {
+        "Csat": 3.19,
+        "K1": 0.0749142615361421,
+        "K2": 0.0445196417786224,
+        "R2_Orde_1": 0.934232856,
+        "R2_Orde_2": 0.9828343023,
+        "Model_Terbaik": "Orde 2"
+      }
+    }
+  },
+  "2": {
+    "Calcium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration EFB 2 mm (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 115.5,
+          "orde1": 114.80823908304502,
+          "orde2": 114.90159041455361
+        },
+        {
+          "time": 10,
+          "concentration": 115.7,
+          "orde1": 121.48742352007179,
+          "orde2": 118.29738007260663
+        },
+        {
+          "time": 15,
+          "concentration": 120.2,
+          "orde1": 121.87599759019189,
+          "orde2": 119.47435765450061
+        },
+        {
+          "time": 20,
+          "concentration": 120.2,
+          "orde1": 121.89860361483356,
+          "orde2": 120.07167294240885
+        },
+        {
+          "time": 25,
+          "concentration": 121.6,
+          "orde1": 121.89991876267639,
+          "orde2": 120.43293758294715
+        }
+      ],
+      "parameters": {
+        "Csat": 121.9,
+        "K1": 0.5688534720993575,
+        "K2": 0.02693723244519966,
+        "R2_Orde_1": 0.9967456106705529,
+        "R2_Orde_2": 0.9991396672237267,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Sulfur": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 8,
+          "orde1": 8.699999999999996,
+          "orde2": 7.9756222029455275
+        },
+        {
+          "time": 10,
+          "concentration": 8.2,
+          "orde1": 8.7,
+          "orde2": 8.322077859663867
+        },
+        {
+          "time": 15,
+          "concentration": 8.4,
+          "orde1": 8.7,
+          "orde2": 8.44435015406898
+        },
+        {
+          "time": 20,
+          "concentration": 8.5,
+          "orde1": 8.7,
+          "orde2": 8.506843638712548
+        },
+        {
+          "time": 25,
+          "concentration": 8.7,
+          "orde1": 8.7,
+          "orde2": 8.544785701103494
+        }
+      ],
+      "parameters": {
+        "Csat": 8.7,
+        "K1": 7.059849299661959,
+        "K2": 0.2531105144233669,
+        "R2_Orde_1": 0.9857630446979616,
+        "R2_Orde_2": 0.9990437894147185,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Magnesium": {
+      "data": [
+        {
+          "time": "Time (t)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 66.9,
+          "orde1": 76.69999999997762,
+          "orde2": 63.50926444140871
+        },
+        {
+          "time": 10,
+          "concentration": 67.7,
+          "orde1": 76.7,
+          "orde2": 69.48414717191004
+        },
+        {
+          "time": 15,
+          "concentration": 69.3,
+          "orde1": 76.7,
+          "orde2": 71.73368975373901
+        },
+        {
+          "time": 20,
+          "concentration": 69.8,
+          "orde1": 76.7,
+          "orde2": 72.91398131998783
+        },
+        {
+          "time": 25,
+          "concentration": 70.5,
+          "orde1": 76.7,
+          "orde2": 73.64098561504142
+        }
+      ],
+      "parameters": {
+        "Csat": 76.7,
+        "K1": 5.772538488566958,
+        "K2": 0.01255459480621543,
+        "R2_Orde_1": 0.9257091513024086,
+        "R2_Orde_2": 0.9890728396227004,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Silicon": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 4.7,
+          "orde1": 5.599999999999882,
+          "orde2": 4.6843229523732814
+        },
+        {
+          "time": 10,
+          "concentration": 5,
+          "orde1": 5.6,
+          "orde2": 5.101397273261795
+        },
+        {
+          "time": 25,
+          "concentration": 5.1,
+          "orde1": 5.6,
+          "orde2": 5.389303119391884
+        },
+        {
+          "time": 20,
+          "concentration": 5.5,
+          "orde1": 5.6,
+          "orde2": 5.339083112379129
+        },
+        {
+          "time": 25,
+          "concentration": 5.5,
+          "orde1": 5.6,
+          "orde2": 5.389303119391884
+        }
+      ],
+      "parameters": {
+        "Csat": 5.6,
+        "K1": 6.300285643275005,
+        "K2": 0.18270333272265837,
+        "R2_Orde_1": 0.9402702062100112,
+        "R2_Orde_2": 0.9932144293977604,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Sodium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2( Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 14.2,
+          "orde1": 13.496759274803825,
+          "orde2": 14.200070657852393
+        },
+        {
+          "time": 10,
+          "concentration": 15.2,
+          "orde1": 16.402674891351655,
+          "orde2": 15.55673030015825
+        },
+        {
+          "time": 15,
+          "concentration": 16,
+          "orde1": 17.02833216200186,
+          "orde2": 16.06845121097973
+        },
+        {
+          "time": 20,
+          "concentration": 16.1,
+          "orde1": 17.163039108785984,
+          "orde2": 16.337147127375484
+        },
+        {
+          "time": 25,
+          "concentration": 17.2,
+          "orde1": 17.192042146652135,
+          "orde2": 16.50272178902412
+        }
+      ],
+      "parameters": {
+        "Csat": 17.2,
+        "K1": 0.30714021516927076,
+        "K2": 0.05504032990140271,
+        "R2_Orde_1": 0.981710995582877,
+        "R2_Orde_2": 0.9954964841105528,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Phosphorus": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 20.1,
+          "orde1": 18.877791125293665,
+          "orde2": 19.139478418563883
+        },
+        {
+          "time": 10,
+          "concentration": 21,
+          "orde1": 22.84466184179167,
+          "orde2": 21.256462718022878
+        },
+        {
+          "time": 15,
+          "concentration": 21.2,
+          "orde1": 23.678237294394552,
+          "orde2": 22.070177314258416
+        },
+        {
+          "time": 20,
+          "concentration": 21.1,
+          "orde1": 23.85340005739872,
+          "orde2": 22.500852740973517
+        },
+        {
+          "time": 25,
+          "concentration": 22.2,
+          "orde1": 23.89020775542707,
+          "orde2": 22.767421573523272
+        }
+      ],
+      "parameters": {
+        "Csat": 23.9,
+        "K1": 0.3120017214260494,
+        "K2": 0.03364400235955018,
+        "R2_Orde_1": 0.9473569705413218,
+        "R2_Orde_2": 0.9879033094500517,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Iron": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 6.49,
+          "orde1": 5.693506473808598,
+          "orde2": 6.332490828733838
+        },
+        {
+          "time": 10,
+          "concentration": 6.89,
+          "orde1": 7.613320751191071,
+          "orde2": 7.290484791464152
+        },
+        {
+          "time": 15,
+          "concentration": 7.79,
+          "orde1": 8.260669950949879,
+          "orde2": 7.677648999482284
+        },
+        {
+          "time": 20,
+          "concentration": 7.79,
+          "orde1": 8.47895199591921,
+          "orde2": 7.887072111594287
+        },
+        {
+          "time": 25,
+          "concentration": 7.89,
+          "orde1": 8.552555317239058,
+          "orde2": 8.018301157016941
+        }
+      ],
+      "parameters": {
+        "Csat": 8.59,
+        "K1": 0.2174195718978762,
+        "K2": 0.06531032997096192,
+        "R2_Orde_1": 0.9559309034889458,
+        "R2_Orde_2": 0.9912397532284016,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Titanium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concenctration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 0.1,
+          "orde1": 0.1,
+          "orde2": 0.0999999627471116
+        },
+        {
+          "time": 10,
+          "concentration": 0.1,
+          "orde1": 0.1,
+          "orde2": 0.09999998137355234
+        },
+        {
+          "time": 15,
+          "concentration": 0.1,
+          "orde1": 0.1,
+          "orde2": 0.09999998758236746
+        },
+        {
+          "time": 20,
+          "concentration": 0.1,
+          "orde1": 0.1,
+          "orde2": 0.09999999068677531
+        },
+        {
+          "time": 25,
+          "concentration": 0.1,
+          "orde1": 0.1,
+          "orde2": 0.09999999254942012
+        }
+      ],
+      "parameters": {
+        "Csat": 0.1,
+        "K1": 5368709.22,
+        "K2": 5368709.220000001,
+        "R2_Orde_1": 1,
+        "R2_Orde_2": 0.9999999999997585,
+        "Model_Terbaik": "Orde 1"
+      }
+    },
+    "Potassium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct1)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 585.1,
+          "orde1": 580.6279452586616,
+          "orde2": 573.562930886248
+        },
+        {
+          "time": 10,
+          "concentration": 592.7,
+          "orde1": 621.4179228387078,
+          "orde2": 597.9486404332641
+        },
+        {
+          "time": 15,
+          "concentration": 597.9,
+          "orde1": 624.2834794908931,
+          "orde2": 606.5446289772987
+        },
+        {
+          "time": 20,
+          "concentration": 592.7,
+          "orde1": 624.4847891118845,
+          "orde2": 610.9359748941683
+        },
+        {
+          "time": 25,
+          "concentration": 604.7,
+          "orde1": 624.4989314124642,
+          "orde2": 613.6014369585013
+        }
+      ],
+      "parameters": {
+        "Csat": 624.5,
+        "K1": 0.5311347556870717,
+        "K2": 0.003606157377124198,
+        "R2_Orde_1": 0.9904790079514971,
+        "R2_Orde_2": 0.9976379780043272,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Aluminum": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 0.5,
+          "orde1": 0.49369334111668856,
+          "orde2": 0.5767542125110152
+        },
+        {
+          "time": 10,
+          "concentration": 0.7,
+          "orde1": 0.6827202884046784,
+          "orde2": 0.670277041197171
+        },
+        {
+          "time": 15,
+          "concentration": 0.7,
+          "orde1": 0.7550955542330483,
+          "orde2": 0.7085764731272282
+        },
+        {
+          "time": 20,
+          "concentration": 0.8,
+          "orde1": 0.7828068365601477,
+          "orde2": 0.7294157739430103
+        },
+        {
+          "time": 25,
+          "concentration": 0.8,
+          "orde1": 0.7934170244388802,
+          "orde2": 0.7425182937167994
+        }
+      ],
+      "parameters": {
+        "Csat": 0.8,
+        "K1": 0.19200499486448053,
+        "K2": 0.6458735671994176,
+        "R2_Orde_1": 0.9926870136990904,
+        "R2_Orde_2": 0.9656193736719647,
+        "Model_Terbaik": "Orde 1"
+      }
+    },
+    "Chloride": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 0.79,
+          "orde1": 1.0479393712321294,
+          "orde2": 1.3053201025086172
+        },
+        {
+          "time": 10,
+          "concentration": 1.09,
+          "orde1": 1.8713026840228701,
+          "orde2": 2.060592574928459
+        },
+        {
+          "time": 15,
+          "concentration": 2.39,
+          "orde1": 2.5182171558521524,
+          "orde2": 2.5529881957266096
+        },
+        {
+          "time": 20,
+          "concentration": 2.59,
+          "orde1": 3.026496219736702,
+          "orde2": 2.8994068010104526
+        },
+        {
+          "time": 25,
+          "concentration": 3.69,
+          "orde1": 3.425849794333392,
+          "orde2": 3.1563832879823077
+        }
+      ],
+      "parameters": {
+        "Csat": 4.89,
+        "K1": 0.048236691748463234,
+        "K2": 0.014893191800288079,
+        "R2_Orde_1": 0.871383029,
+        "R2_Orde_2": 0.775642292,
+        "Model_Terbaik": "Orde 1"
+      }
+    }
+  },
+  "0.85": {
+    "Calcium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration EFB 0,85mm (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 94.7,
+          "orde1": 94.42791839254564,
+          "orde2": 103.49862748367693
+        },
+        {
+          "time": 10,
+          "concentration": 124.8,
+          "orde1": 121.61125328622808,
+          "orde2": 116.25580504727317
+        },
+        {
+          "time": 15,
+          "concentration": 124.4,
+          "orde1": 129.4366264229129,
+          "orde2": 121.23700474835879
+        },
+        {
+          "time": 20,
+          "concentration": 125.1,
+          "orde1": 131.68934725234215,
+          "orde2": 123.89118064848886
+        },
+        {
+          "time": 25,
+          "concentration": 125.7,
+          "orde1": 132.33784682504034,
+          "orde2": 125.54021084089302
+        }
+      ],
+      "parameters": {
+        "Csat": 132.6,
+        "K1": 0.24904653546224145,
+        "K2": 0.005364232461446298,
+        "R2_Orde_1": 0.9908718289355692,
+        "R2_Orde_2": 0.9853807633133711,
+        "Model_Terbaik": "Orde 1"
+      }
+    },
+    "Sulfur": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1",
+          "orde2": "Orde 2"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 7.3,
+          "orde1": 9.299999999998994,
+          "orde2": 7.448072669863995
+        },
+        {
+          "time": 10,
+          "concentration": 8.5,
+          "orde1": 9.3,
+          "orde2": 8.271647394314494
+        },
+        {
+          "time": 15,
+          "concentration": 8.5,
+          "orde1": 9.3,
+          "orde2": 8.588195539890965
+        },
+        {
+          "time": 20,
+          "concentration": 8.6,
+          "orde1": 9.3,
+          "orde2": 8.755732350060152
+        },
+        {
+          "time": 25,
+          "concentration": 8.9,
+          "orde1": 9.3,
+          "orde2": 8.85942913881698
+        }
+      ],
+      "parameters": {
+        "Csat": 9.3,
+        "K1": 5.970765689924566,
+        "K2": 0.0864902219417884,
+        "R2_Orde_1": 0.9079478422850671,
+        "R2_Orde_2": 0.9962015681100409,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Magnesium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 67.8,
+          "orde1": 95.69999999998434,
+          "orde2": 72.9664415110851
+        },
+        {
+          "time": 10,
+          "concentration": 88.2,
+          "orde1": 95.7,
+          "orde2": 82.8011593776574
+        },
+        {
+          "time": 15,
+          "concentration": 87,
+          "orde1": 95.7,
+          "orde2": 86.6962521649442
+        },
+        {
+          "time": 20,
+          "concentration": 89.4,
+          "orde1": 95.7,
+          "orde2": 88.78453204527086
+        },
+        {
+          "time": 25,
+          "concentration": 90.4,
+          "orde1": 95.7,
+          "orde2": 90.08649711094387
+        }
+      ],
+      "parameters": {
+        "Csat": 95.7,
+        "K1": 5.88820848114327,
+        "K2": 0.006707702667213937,
+        "R2_Orde_1": 0.8574581372759702,
+        "R2_Orde_2": 0.9885273285950914,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Silicon": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct2)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 3.59,
+          "orde1": 5.089999999991144,
+          "orde2": 3.439356349369728
+        },
+        {
+          "time": 10,
+          "concentration": 3.69,
+          "orde1": 5.09,
+          "orde2": 4.104957772009499
+        },
+        {
+          "time": 15,
+          "concentration": 4.29,
+          "orde1": 5.09,
+          "orde2": 4.388021734401482
+        },
+        {
+          "time": 20,
+          "concentration": 4.69,
+          "orde1": 5.09,
+          "orde2": 4.544715827435942
+        },
+        {
+          "time": 25,
+          "concentration": 4.69,
+          "orde1": 5.09,
+          "orde2": 4.644221544613094
+        }
+      ],
+      "parameters": {
+        "Csat": 5.09,
+        "K1": 5.415443129999538,
+        "K2": 0.08187212501227344,
+        "R2_Orde_1": 0.7118139555639734,
+        "R2_Orde_2": 0.9793859262920972,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Sodium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 15.5,
+          "orde1": 14.959117874549973,
+          "orde2": 15.166965271888056
+        },
+        {
+          "time": 10,
+          "concentration": 15.6,
+          "orde1": 17.131081029975345,
+          "orde2": 16.250171391736405
+        },
+        {
+          "time": 15,
+          "concentration": 16,
+          "orde1": 17.44643545047571,
+          "orde2": 16.646461365858396
+        },
+        {
+          "time": 20,
+          "concentration": 17.1,
+          "orde1": 17.492222788203197,
+          "orde2": 16.851944012646758
+        },
+        {
+          "time": 25,
+          "concentration": 17.5,
+          "orde1": 17.49887080123198,
+          "orde2": 16.9776867733885
+        }
+      ],
+      "parameters": {
+        "Csat": 17.5,
+        "K1": 0.38593791334143673,
+        "K2": 0.07429668486105694,
+        "R2_Orde_1": 0.9795455135442763,
+        "R2_Orde_2": 0.9938116762361613,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Phosphorus": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 19.2,
+          "orde1": 15.937939932891439,
+          "orde2": 18.723564557683762
+        },
+        {
+          "time": 10,
+          "concentration": 20.1,
+          "orde1": 22.536985406060243,
+          "orde2": 22.17950461268309
+        },
+        {
+          "time": 15,
+          "concentration": 24.5,
+          "orde1": 25.26929593931054,
+          "orde2": 23.63357644514187
+        },
+        {
+          "time": 20,
+          "concentration": 24.5,
+          "orde1": 26.400599077084735,
+          "orde2": 24.434531297830286
+        },
+        {
+          "time": 25,
+          "concentration": 24.7,
+          "orde1": 26.869010984868613,
+          "orde2": 24.94170410729726
+        }
+      ],
+      "parameters": {
+        "Csat": 27.2,
+        "K1": 0.1763554825748786,
+        "K2": 0.01624188253935174,
+        "R2_Orde_1": 0.9504781786277399,
+        "R2_Orde_2": 0.9825143446374743,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Iron": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 4.79,
+          "orde1": 4.614802144100813,
+          "orde2": 5.650777099511263
+        },
+        {
+          "time": 10,
+          "concentration": 6.89,
+          "orde1": 6.83405886309505,
+          "orde2": 6.909590604527404
+        },
+        {
+          "time": 15,
+          "concentration": 7.59,
+          "orde1": 7.9012986343812175,
+          "orde2": 7.463824912064524
+        },
+        {
+          "time": 20,
+          "concentration": 8.39,
+          "orde1": 8.414533862945106,
+          "orde2": 7.775677485801032
+        },
+        {
+          "time": 25,
+          "concentration": 8.59,
+          "orde1": 8.661348502847048,
+          "orde2": 7.9756192656063
+        }
+      ],
+      "parameters": {
+        "Csat": 8.89,
+        "K1": 0.1464193332252782,
+        "K2": 0.03924601604155832,
+        "R2_Orde_1": 0.997530862173965,
+        "R2_Orde_2": 0.9648675952204468,
+        "Model_Terbaik": "Orde 1"
+      }
+    },
+    "Titanium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 0,
+          "orde1": 0.04746189077080537,
+          "orde2": 0.05637783785448432
+        },
+        {
+          "time": 10,
+          "concentration": 0.1,
+          "orde1": 0.07239747078621216,
+          "orde2": 0.07210463915858217
+        },
+        {
+          "time": 15,
+          "concentration": 0.1,
+          "orde1": 0.08549815305163977,
+          "orde2": 0.07949659298152542
+        },
+        {
+          "time": 20,
+          "concentration": 0.1,
+          "orde1": 0.09238100381001989,
+          "orde2": 0.08379162759481792
+        },
+        {
+          "time": 25,
+          "concentration": 0.1,
+          "orde1": 0.09599712345954008,
+          "orde2": 0.08659888143516463
+        }
+      ],
+      "parameters": {
+        "Csat": 0.1,
+        "K1": 0.1287262779282789,
+        "K2": 2.58482546859635,
+        "R2_Orde_1": 0.768766960064608,
+        "R2_Orde_2": 0.653515296431985,
+        "Model_Terbaik": "Orde 1"
+      }
+    },
+    "Potassium": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 488.7,
+          "orde1": 426.576077910009,
+          "orde2": 489.9879281701487
+        },
+        {
+          "time": 10,
+          "concentration": 523.4,
+          "orde1": 580.9906986781006,
+          "orde2": 565.5262251730447
+        },
+        {
+          "time": 15,
+          "concentration": 596.2,
+          "orde1": 636.8866486427013,
+          "orde2": 596.1617007454292
+        },
+        {
+          "time": 20,
+          "concentration": 641.7,
+          "orde1": 657.1202068828726,
+          "orde2": 612.7587704372467
+        },
+        {
+          "time": 25,
+          "concentration": 646.2,
+          "orde1": 664.4444741923589,
+          "orde2": 623.1681256148261
+        }
+      ],
+      "parameters": {
+        "Csat": 668.6,
+        "K1": 0.20322988022065555,
+        "K2": 0.0008206126277846295,
+        "R2_Orde_1": 0.9714334156527372,
+        "R2_Orde_2": 0.9859944979778877,
+        "Model_Terbaik": "Orde 2"
+      }
+    },
+    "Aluminum": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2 (Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 0.4,
+          "orde1": 0.40489131074903506,
+          "orde2": 0.5078788771252677
+        },
+        {
+          "time": 10,
+          "concentration": 0.7,
+          "orde1": 0.6276304286979906,
+          "orde2": 0.6493328323045374
+        },
+        {
+          "time": 15,
+          "concentration": 0.7,
+          "orde1": 0.7501638428453499,
+          "orde2": 0.7157862027157391
+        },
+        {
+          "time": 20,
+          "concentration": 0.8,
+          "orde1": 0.8175720184763995,
+          "orde2": 0.7543886463760343
+        },
+        {
+          "time": 25,
+          "concentration": 0.8,
+          "orde1": 0.8546546556780527,
+          "orde2": 0.7796155061899342
+        }
+      ],
+      "parameters": {
+        "Csat": 0.9,
+        "K1": 0.11952349012282862,
+        "K2": 0.28782426171557957,
+        "R2_Orde_1": 0.9801283730234136,
+        "R2_Orde_2": 0.9533131923898029,
+        "Model_Terbaik": "Orde 1"
+      }
+    },
+    "Chloride": {
+      "data": [
+        {
+          "time": "Time (min)",
+          "concentration": "Concentration (Ct1)",
+          "orde1": "Orde 1 (Ct2)",
+          "orde2": "Orde 2(Ct3)"
+        },
+        {
+          "time": 0,
+          "concentration": 0,
+          "orde1": 0,
+          "orde2": 0
+        },
+        {
+          "time": 5,
+          "concentration": 1.09,
+          "orde1": 1.1711355872413431,
+          "orde2": 1.5003648111080803
+        },
+        {
+          "time": 10,
+          "concentration": 2.09,
+          "orde1": 2.067409738870837,
+          "orde2": 2.3070568836487695
+        },
+        {
+          "time": 15,
+          "concentration": 2.09,
+          "orde1": 2.75333147468914,
+          "orde2": 2.8108148171904666
+        },
+        {
+          "time": 20,
+          "concentration": 2.49,
+          "orde1": 3.2782697726559062,
+          "orde2": 3.1553033045977497
+        },
+        {
+          "time": 25,
+          "concentration": 4.29,
+          "orde1": 3.680006883878228,
+          "orde2": 3.4057445153252695
+        }
+      ],
+      "parameters": {
+        "Csat": 4.99,
+        "K1": 0.053496561097322,
+        "K2": 0.017232420844471,
+        "R2_Orde_1": 0.863739512,
+        "R2_Orde_2": 0.782554806,
+        "Model_Terbaik": "Orde 1"
+      }
+    }
+  }
+}

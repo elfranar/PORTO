@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chemical Kinetic ODE Modeling Project — Computational Chemistry, MATLAB, ode45, Combustion Kinetics. Elfrana De Ridwan." />
+  <title>Chemical Kinetic ODE Modeling | Elfrana De Ridwan</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+
+<!-- ── NAVBAR ─────────────────────────────────── -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">EDR<span class="text-accent">.</span></a>
+    <div class="ms-auto">
+      <a href="index.html" class="btn-back"><i class="bi bi-arrow-left me-1"></i>Back to Portfolio</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── PROJECT HEADER ─────────────────────────── -->
+<section class="project-hero">
+  <div class="container" style="max-width:960px;">
+    <p class="label-tag mb-2">Computational Chemistry &bull; Group 4 (Kelompok 4)</p>
+    <h1 class="proj-hero-title">Chemical Kinetic<br>ODE Modeling</h1>
+    <p class="proj-hero-sub">Simulated &middot; Numerically Solved &middot; Evaluated</p>
+
+    <!-- Meta strip -->
+    <div class="meta-strip row g-0 mt-4">
+      <div class="col-4 meta-cell text-center">
+        <div class="meta-key">Institution</div>
+        <div class="meta-val">Universitas Indonesia</div>
+      </div>
+      <div class="col-4 meta-cell text-center">
+        <div class="meta-key">Timeline</div>
+        <div class="meta-val">Semester 5 (2025)</div>
+      </div>
+      <div class="col-4 meta-cell text-center" style="border:none">
+        <div class="meta-key">Primary Tools</div>
+        <div class="meta-val">MATLAB &bull; ODE45 Solver</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container py-5" style="max-width:960px;">
+
+  <!-- Initial Project Description -->
+  <div class="mb-5 p-4 bg-light border-start border-primary border-3 rounded">
+    <p class="lead mb-0 text-dark" style="font-size: 1.05rem; line-height: 1.6;">
+      <strong>Project Overview:</strong> Modeled a multi-species chemical reaction network of ammonia/C1 fuel combustion. Designed and implemented the numerical solver in MATLAB using the <code>ode45</code> Runge-Kutta solver to integrate the system of 9 coupled ordinary differential equations (ODEs). Conducted validation trials across multiple time spans (tspan) and concentration ranges to find the optimal simulation window.
+    </p>
+  </div>
+
+  <!-- ── 1. THE CHEMICAL MODEL ─────────────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>01</span> Reaction Network &amp; Differential Equations</div>
+    
+    <div class="row g-4 align-items-start mb-4">
+      <div class="col-md-6">
+        <div class="img-frame">
+          <img src="static/images/compchem_equations.png" alt="Handwritten Kinetic Differential Equations" class="img-fluid">
+        </div>
+        <p class="img-caption">Fig. 1 — Group Derivation of Rate Changing Equations (d[Spesi]/dt)</p>
+      </div>
+      
+      <div class="col-md-6">
+        <h5 class="fw-bold mb-3 text-dark">Elementary Reactions &amp; Rate Constants (k)</h5>
+        <div class="table-responsive mb-3">
+          <table class="table table-bordered table-striped bom-table text-center mb-0" style="font-size:0.85rem">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Reaction Equation</th>
+                <th>Rate Constant (k at 1000K)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="text-start">HONO + H &rarr; NO<sub>2</sub> + H<sub>2</sub></td>
+                <td class="mono-accent">2.9 &times; 10<sup>11</sup></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="text-start">HONO + H &rarr; HNO + OH</td>
+                <td class="mono-accent">2.2 &times; 10<sup>10</sup></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="text-start">HONO + H &rarr; NO + H<sub>2</sub>O</td>
+                <td class="mono-accent">4.8 &times; 10<sup>11</sup></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="text-start">HNO<sub>2</sub> + H &rarr; NO<sub>2</sub> + H<sub>2</sub></td>
+                <td class="mono-accent">1.3 &times; 10<sup>13</sup></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td class="text-start">HNO<sub>2</sub> + H &rarr; HNO + OH</td>
+                <td class="mono-accent">4.8 &times; 10<sup>11</sup></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td class="text-start">HNO<sub>2</sub> + H &rarr; NO + H<sub>2</sub>O</td>
+                <td class="mono-accent">3.3 &times; 10<sup>11</sup></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plain HTML differential equations display -->
+    <div class="ana-card bg-light p-4">
+      <h5 class="fw-bold mb-3 text-dark"><i class="bi bi-calculator me-2"></i>Derived Rate Equation System</h5>
+      <p class="small text-muted mb-3">
+        Applying the law of mass action to the reaction network yields a system of 9 coupled ordinary differential equations:
+      </p>
+      <div class="row g-2" style="font-size:0.88rem; font-family:Consolas, monospace;">
+        <div class="col-md-6">
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">d[NO<sub>2</sub>]/dt = k<sub>1</sub> [HONO][H] + k<sub>4</sub> [HNO<sub>2</sub>][H]</li>
+            <li class="mb-2">d[H]/dt = - (k<sub>1</sub>+k<sub>2</sub>+k<sub>3</sub>) [HONO][H] - (k<sub>4</sub>+k<sub>5</sub>+k<sub>6</sub>) [HNO<sub>2</sub>][H]</li>
+            <li class="mb-2">d[NO]/dt = k<sub>3</sub> [HONO][H] + k<sub>6</sub> [HNO<sub>2</sub>][H]</li>
+            <li class="mb-2">d[OH]/dt = k<sub>2</sub> [HONO][H] + k<sub>5</sub> [HNO<sub>2</sub>][H]</li>
+            <li class="mb-2">d[HONO]/dt = - (k<sub>1</sub> + k<sub>2</sub> + k<sub>3</sub>) [HONO][H]</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">d[HNO<sub>2</sub>]/dt = - (k<sub>4</sub> + k<sub>5</sub> + k<sub>6</sub>) [HNO<sub>2</sub>][H]</li>
+            <li class="mb-2">d[H<sub>2</sub>O]/dt = k<sub>3</sub> [HONO][H] + k<sub>6</sub> [HNO<sub>2</sub>][H]</li>
+            <li class="mb-2">d[H<sub>2</sub>]/dt = k<sub>1</sub> [HONO][H] + k<sub>4</sub> [HNO<sub>2</sub>][H]</li>
+            <li class="mb-2">d[HNO]/dt = k<sub>2</sub> [HONO][H] + k<sub>5</sub> [HNO<sub>2</sub>][H]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 2. MATLAB CODE IMPLEMENTATION ────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>02</span> MATLAB Script Implementation</div>
+    
+    <div class="mb-3">
+      <strong>My Contribution:</strong> Served as the primary programmer in the group, translating the derived rate differential equations into a compiled MATLAB solver. Tested various parameter ranges (tspan and concentration thresholds) to solve stiff solver behavior and optimize visual output.
+    </div>
+
+    <!-- Code Block -->
+    <div class="ana-card p-0" style="overflow:hidden">
+      <div class="bg-dark px-3 py-2 text-white d-flex justify-content-between align-items-center" style="font-size:0.8rem">
+        <span><i class="bi bi-file-earmark-code me-2"></i>kinetika_reaksi.m</span>
+        <span class="badge bg-secondary">MATLAB</span>
+      </div>
+      <pre class="m-0 p-3 bg-light text-dark" style="font-family:Consolas, monospace; font-size:0.8rem; overflow-x:auto;">
+function KINETIKA()
+    % Initial concentrations (Molar)
+    NO2_0 = 0;      H_0 = 1e-6;     NO_0 = 0;      
+    OH_0 = 0;       HONO_0 = 1e-6;  HNO2_0 = 1e-6; 
+    H2O_0 = 0;      H2_0 = 0;       HNO_0 = 0;
+
+    % Concentration vector
+    y0 = [NO2_0, H_0, NO_0, OH_0, HONO_0, HONO_0, H2O_0, H2_0, HNO_0];
+
+    % Rate constants at 1000K, 1atm
+    k1 = 2.9e11;  k2 = 2.2e10;  k3 = 4.8e11;
+    k4 = 1.3e13;  k5 = 4.8e11;  k6 = 3.3e11;
+
+    % Optimal simulation window (time span in seconds)
+    tspan = [0, 1e-6]; 
+    
+    % Execute ode45 Runge-Kutta numerical integration
+    [t, y] = ode45(@(t, y) reaksi_ratarata(t, y, k1, k2, k3, k4, k5, k6), tspan, y0);
+    
+    % Plotting commands...
+end
+
+function dydt = reaksi_ratarata(~, y, k1, k2, k3, k4, k5, k6)
+    dydt = zeros(9, 1);
+    % y: [NO2, H, NO, OH, HONO, HNO2, H2O, H2, HNO]
+    dydt(1) = k1*y(5)*y(2) + k4*y(6)*y(2);                             % d[NO2]/dt
+    dydt(2) = - (k1+k2+k3)*y(5)*y(2) - (k4+k5+k6)*y(6)*y(2);           % d[H]/dt
+    dydt(3) = k3*y(5)*y(2) + k6*y(6)*y(2);                             % d[NO]/dt
+    dydt(4) = k2*y(5)*y(2) + k5*y(6)*y(2);                             % d[OH]/dt
+    dydt(5) = - (k1+k2+k3)*y(5)*y(2);                                  % d[HONO]/dt
+    dydt(6) = - (k4+k5+k6)*y(6)*y(2);                                  % d[HNO2]/dt
+    dydt(7) = k3*y(5)*y(2) + k6*y(6)*y(2);                             % d[H2O]/dt
+    dydt(8) = k1*y(5)*y(2) + k4*y(6)*y(2);                             % d[H2]/dt
+    dydt(9) = k2*y(5)*y(2) + k5*y(6)*y(2);                             % d[HNO]/dt
+end</pre>
+    </div>
+  </section>
+
+  <!-- ── 3. SIMULATION PARAMETERS OPTIMIZATION ── -->
+  <section class="proj-section">
+    <div class="section-label"><span>03</span> Parameter Optimization &amp; Resolution Trials</div>
+    <p class="small text-muted mb-4">
+      To achieve a representative kinetic trace, we performed sensitivity trials by varying the integration time span (tspan) and concentration bounds. This resolved issues related to numerical stiffness and oscillatory noise in the solver.
+    </p>
+
+    <!-- Main Optimum Graph -->
+    <div class="row g-4 align-items-center mb-5">
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="static/images/compchem_graph_1.png" alt="Optimum Simulation Graph" class="img-fluid">
+        </div>
+        <p class="img-caption">Fig. 2 — Optimum Simulation Profile (tspan = [0, 10<sup>-6</sup>] s, [C]<sub>0</sub> = 10<sup>-6</sup> M)</p>
+      </div>
+      <div class="col-md-6">
+        <h5 class="fw-bold mb-2">Optimum Simulation Profile Analysis</h5>
+        <p class="small text-muted" style="line-height: 1.6;">
+          At the optimal boundary conditions, the Runge-Kutta integration resolves the complete decomposing trends of the reactants (HONO and HNO<sub>2</sub>) as they decay to zero within 0.6 &mu;s. Concurrently, products such as NO<sub>2</sub> and NO display clean asymptotic generation curves.
+        </p>
+        <div class="bg-light p-3 rounded border-start border-success border-3">
+          <span class="small fw-bold text-success text-uppercase">Result:</span>
+          <p class="small text-muted mb-0">Smooth, physical kinetic pathways. Identical trends in wave curvature are correctly simulated for coupled products (HNO<sub>2</sub> and H<sub>2</sub>), matching theoretical expectations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparative Grid for Trials -->
+    <h5 class="fw-bold mb-3 text-dark">Comparison of Sensitivity &amp; Resolution Trials</h5>
+    <div class="row g-3">
+      <!-- Trial 2: Excess Time Span -->
+      <div class="col-md-6">
+        <div class="ana-card h-100">
+          <img src="static/images/compchem_graph_2.png" alt="Excess Time Span Graph" class="img-fluid rounded mb-2 border">
+          <h6 class="fw-bold mb-1 text-danger">Trial B: Excess Time Span (tspan = [0, 10<sup>-5</sup>] s)</h6>
+          <p class="small text-muted mb-0" style="font-size: 0.8rem;">
+            Extending the time scale to 10<sup>-5</sup> seconds introduces intense numerical instability. The <code>ode45</code> solver experiences stiff step-size fluctuations, generating artificial high-frequency oscillations that distort physical concentration curves.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trial 3: Insufficient Time Span -->
+      <div class="col-md-6">
+        <div class="ana-card h-100">
+          <img src="static/images/compchem_graph_3.png" alt="Insufficient Time Span Graph" class="img-fluid rounded mb-2 border">
+          <h6 class="fw-bold mb-1 text-warning">Trial C: Insufficient Time Span (tspan = [0, 10<sup>-7</sup>] s)</h6>
+          <p class="small text-muted mb-0" style="font-size: 0.8rem;">
+            Shortening the simulation to 10<sup>-7</sup> seconds yields under-resolved, linear concentration lines. The system has insufficient time to undergo reactions, showing incomplete kinetic progression.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trial 4: Excess Concentration -->
+      <div class="col-md-6">
+        <div class="ana-card h-100">
+          <img src="static/images/compchem_graph_4.png" alt="Excess Concentration Graph" class="img-fluid rounded mb-2 border">
+          <h6 class="fw-bold mb-1 text-danger">Trial D: Excess Concentration ([C]<sub>0</sub> = 10<sup>-5</sup> M)</h6>
+          <p class="small text-muted mb-0" style="font-size: 0.8rem;">
+            Elevating the initial concentration to 10<sup>-5</sup> M accelerates reactant consumption rate. This causes the differential equations to become extremely stiff, resulting in numerical noise and unstable curves in the output.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trial 5: Insufficient Concentration -->
+      <div class="col-md-6">
+        <div class="ana-card h-100">
+          <img src="static/images/compchem_graph_5.png" alt="Insufficient Concentration Graph" class="img-fluid rounded mb-2 border">
+          <h6 class="fw-bold mb-1 text-warning">Trial E: Insufficient Concentration ([C]<sub>0</sub> = 10<sup>-7</sup> M)</h6>
+          <p class="small text-muted mb-0" style="font-size: 0.8rem;">
+            Dropping initial reactant concentrations to 10<sup>-7</sup> M significantly slows down reaction kinetics. The collision rate is too low, yielding linear plots and very slow reactant conversion over the time span.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 4. REFERENCE LITERATURE ──────────────── -->
+  <section class="proj-section mt-5">
+    <div class="section-label"><span>04</span> Reference Literature &amp; Validation</div>
+    
+    <div class="row g-4 align-items-center">
+      <div class="col-md-5 text-center">
+        <div class="img-frame">
+          <img src="static/images/compchem_table_ref.png" alt="Reference Table" class="img-fluid">
+        </div>
+        <p class="img-caption">Fig. 3 — Unimolecular Rate Constants Reference (Zhang et al.)</p>
+      </div>
+      <div class="col-md-7">
+        <h5 class="fw-bold mb-2">Kinetic Validation</h5>
+        <p class="small text-muted" style="line-height: 1.6;">
+          Elementary rate constants (k) were validated against recent combustion literature:
+        </p>
+        <blockquote class="blockquote bg-light p-3 border-start border-primary border-3" style="font-size:0.85rem">
+          Zhang, X., Yalamanchi, K. K., &amp; Mani Sarathy, S. (2023). Combustion Chemistry of ammonia/C1 fuels: A Comprehensive Kinetic Modeling Study. <em>Fuel</em>, 341, 127676.<br>
+          <a href="https://doi.org/10.1016/j.fuel.2023.127676" target="_blank" class="small text-decoration-none">https://doi.org/10.1016/j.fuel.2023.127676</a>
+        </blockquote>
+        <p class="small text-muted" style="line-height: 1.6;">
+          Using established rate coefficients at 1000 K and 1 atm ensured that the numerical simulation matches the physical behavior of nitrogen-oxygen gas-phase combustion intermediates.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+</div>
+
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer class="site-footer py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2" style="max-width: 960px;">
+    <span class="fw-600" style="color:var(--accent)">EDR<span style="color:var(--txt-muted)">.</span></span>
+    <span class="small txt-muted">Elfrana De Ridwan &copy; 2026 &mdash; All rights reserved.</span>
+    <div class="d-flex gap-3">
+      <a href="mailto:elfrana.de@ui.ac.id" class="footer-link"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://www.linkedin.com/in/elfrana-de-ridwan-ba3712145" target="_blank" class="footer-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/elfranar" target="_blank" class="footer-link"><i class="bi bi-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

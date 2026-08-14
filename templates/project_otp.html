@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OTP Verification System Project — Node.js, Express, Redis, Hashing, Rate Limiting. Elfrana De Ridwan." />
+  <title>OTP Verification System | Elfrana De Ridwan</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+<!-- ── NAVBAR ─────────────────────────────────── -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="{{ url_for('home') }}">EDR<span class="text-accent">.</span></a>
+    <div class="ms-auto">
+      <a href="{{ url_for('home') }}" class="btn-back"><i class="bi bi-arrow-left me-1"></i>Back to Portfolio</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── PROJECT HEADER ─────────────────────────── -->
+<section class="project-hero">
+  <div class="container" style="max-width:960px;">
+    <p class="label-tag mb-2">Personal Software Project &bull; Security &amp; Computing</p>
+    <h1 class="proj-hero-title">OTP Verification System</h1>
+    <p class="proj-hero-sub">Secure &middot; Resilient &middot; Single-Use</p>
+
+    <!-- Meta strip -->
+    <div class="meta-strip row g-0 mt-4">
+      <div class="col-4 meta-cell text-center">
+        <div class="meta-key">Repository</div>
+        <div class="meta-val"><a href="https://github.com/elfranar/verif-otp" target="_blank" class="text-decoration-none text-accent text-break">elfranar/verif-otp</a></div>
+      </div>
+      <div class="col-4 meta-cell text-center">
+        <div class="meta-key">Timeline</div>
+        <div class="meta-val">August 2026</div>
+      </div>
+      <div class="col-4 meta-cell text-center" style="border:none">
+        <div class="meta-key">Primary Stack</div>
+        <div class="meta-val">Node.js &bull; Express &bull; Redis</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container py-5" style="max-width:960px;">
+
+  <!-- Initial Project Description -->
+  <div class="mb-5 p-4 bg-light border-start border-primary border-3 rounded">
+    <p class="lead mb-0 text-dark" style="font-size: 1.05rem; line-height: 1.6;">
+      <strong>Project Overview:</strong> Developed a lightweight, highly resilient One-Time Password (OTP) verification backend and frontend service. Built as a self-taught, hands-on learning project to explore backend API architecture, database state management, rate limiting, and security best practices like bcrypt hashing and JWT generation. To guarantee zero uptime interruption during development, the system features an automatic local RAM memory fallback when Redis is offline. Nodemailer handles SMTP email dispatch, falling back to secure terminal logs in developer mode.
+    </p>
+  </div>
+
+  <!-- ── 1. ARCHITECTURE & USER FLOW ───────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>01</span> System Architecture &amp; User Flow</div>
+    
+    <!-- Flow diagram wrapper using CSS flexbox for clean workflow -->
+    <div class="approach-pipeline mb-4">
+      <div class="approach-step">
+        <div class="approach-num mono-accent">01</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Login Request</h5>
+        <p class="small text-muted mb-0">User submits email and password. Server validates details against stored credentials.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">02</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">OTP Generation</h5>
+        <p class="small text-muted mb-0">Server generates a cryptographically secure 6-digit random code.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">03</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Hashed Storage</h5>
+        <p class="small text-muted mb-0">The OTP is hashed using bcrypt and stored in Redis (TTL 3 minutes) or fallback RAM cache.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">04</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Secure Dispatch</h5>
+        <p class="small text-muted mb-0">Nodemailer dispatches the code via SMTP or falls back to writing directly to the terminal console.</p>
+      </div>
+      <div class="approach-step">
+        <div class="approach-num mono-accent">05</div>
+        <h5 class="fw-bold mb-1" style="font-size:0.85rem">Verification</h5>
+        <p class="small text-muted mb-0">User enters code. Server verifies the hash, issues a JWT token, and deletes the OTP immediately.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 2. INTERFACE & USER EXPERIENCE ────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>02</span> Interface &amp; User Experience</div>
+    
+    <!-- Row 1: Login Form screenshots -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='images/otp_login_form.png') }}" alt="OTP login screen front view" class="img-fluid rounded" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 1a — Login Portal Interface</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='images/otp_login_input.png') }}" alt="OTP login screen user credentials input" class="img-fluid rounded" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 1b — Credential Validation Input</p>
+      </div>
+    </div>
+
+    <!-- Row 2: Verification screen and console logs -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='images/otp_verify_form.png') }}" alt="OTP code verification entry form" class="img-fluid rounded" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 2a — 6-Digit Verification Code Entry Form</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='images/otp_terminal_log.png') }}" alt="OTP terminal log dev fallback output" class="img-fluid rounded" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+        <p class="img-caption">Fig. 2b — Developer Mode: OTP Code Printed directly to the Terminal console</p>
+      </div>
+    </div>
+
+    <!-- Interface description -->
+    <div class="p-3 bg-light border-start border-accent border-3 rounded mb-4">
+      <p class="small text-muted mb-0" style="line-height:1.6">
+        <strong>Self-Guided Sandbox Setup:</strong> In dev mode, if SMTP credentials are left blank in the configuration, the system automatically falls back to printing the code directly to the console terminal. This makes testing fast, local, and accessible during early stages of building apps without setting up external mail relays.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── 3. KEY ARCHITECTURAL FEATURES ─────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>03</span> Key Architectural Features</div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="skill-card h-100 p-4">
+          <div class="fs-3 text-accent mb-2"><i class="bi bi-hdd-network-fill"></i></div>
+          <h5 class="fw-bold mb-2">Redis &amp; RAM Fallback</h5>
+          <p class="text-muted small mb-0" style="line-height: 1.6;">
+            Features an automatic local caching fallback. If the Redis server goes offline, the backend catches the failure and switches storage to an in-memory JS Map Cache, preserving identical expiration TTL limits.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-card h-100 p-4">
+          <div class="fs-3 text-accent mb-2"><i class="bi bi-shield-slash-fill"></i></div>
+          <h5 class="fw-bold mb-2">Rate Limiting Protection</h5>
+          <p class="text-muted small mb-0" style="line-height: 1.6;">
+            Protects api points from spamming and brute-force attempts. Code generation is restricted to 3 requests per 3 minutes, and verification attempts are strictly capped at 5 attempts per 3 minutes.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-card h-100 p-4">
+          <div class="fs-3 text-accent mb-2"><i class="bi bi-key-fill"></i></div>
+          <h5 class="fw-bold mb-2">Cryptographic Safety</h5>
+          <p class="text-muted small mb-0" style="line-height: 1.6;">
+            Plaintext codes are never stored. The system hashes them on-the-fly using <span class="mono-accent">bcryptjs</span> before writing to memory. Once successfully validated, the entry is immediately deleted.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 4. CODE IMPLEMENTATION & REFLECTION ────── -->
+  <section class="proj-section" style="border:none;">
+    <div class="section-label"><span>04</span> Code Implementation &amp; Reflection</div>
+
+    <h5 class="fw-bold text-dark mb-2">Core State Storage Logic</h5>
+    <p class="text-muted small mb-3">
+      The following Javascript snippet shows the custom fallback architecture ensuring the server does not crash if local Redis is offline:
+    </p>
+
+    <!-- Code Block -->
+    <div class="code-wrap mb-4" style="background:#0f141c; color:#a5b4fc; padding:20px; border-radius:8px; border:1px solid #1e293b; font-family:SFMono-Regular, Consolas, monospace; font-size:0.85rem; overflow-x:auto;">
+<pre style="margin:0;"><span style="color:#6366f1;">// Local storage fallback map if Redis is not active</span>
+<span style="color:#f43f5e;">const</span> localStore = <span style="color:#3b82f6;">new</span> <span style="color:#ec4899;">Map</span>();
+
+<span style="color:#f43f5e;">async function</span> <span style="color:#10b981;">saveOTPToCache</span>(email, plaintextOtp) {
+  <span style="color:#f43f5e;">const</span> hashedOtp = <span style="color:#f43f5e;">await</span> bcrypt.hash(plaintextOtp, <span style="color:#d946ef;">10</span>);
+  <span style="color:#f43f5e;">const</span> ttlSeconds = <span style="color:#d946ef;">180</span>; <span style="color:#6366f1;">// 3 minutes TTL</span>
+
+  <span style="color:#f43f5e;">if</span> (redisClient.isOpen) {
+    <span style="color:#f43f5e;">await</span> redisClient.setEx(<span style="color:#e11d48;">`otp:${email}`</span>, ttlSeconds, hashedOtp);
+  } <span style="color:#f43f5e;">else</span> {
+    <span style="color:#6366f1;">// Dev Fallback: Store in local RAM Map</span>
+    <span style="color:#f43f5e;">const</span> expiresAt = <span style="color:#ec4899;">Date</span>.now() + (ttlSeconds * <span style="color:#d946ef;">1000</span>);
+    localStore.set(email, { hashedOtp, expiresAt });
+  }
+}</pre>
+    </div>
+
+    <!-- Personal Reflection -->
+    <div class="ana-card bg-white border rounded p-4">
+      <h5 class="fw-bold mb-3 text-dark"><i class="bi bi-journal-code me-2 text-accent"></i>Learning Reflection</h5>
+      <p class="small text-muted mb-2" style="line-height:1.7">
+        "As a Chemistry undergraduate student, my academic focus rests primarily on sustainable technologies, physical chemistry, and reactor modeling. However, my curiosity about the computational side of science led me to explore coding and software development. Building this OTP Secure System was one of my earliest self-taught experiments in building complete, secure web systems."
+      </p>
+      <p class="small text-muted mb-0" style="line-height:1.7">
+        "Working on backend route handlers, handling local database connection failures, and protecting APIs from basic script attacks helped me understand the mechanics of secure authentication. This project serves as a key learning milestone in my personal programming journey, bridging my core scientific background with clean, resilient coding methodologies."
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

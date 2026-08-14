@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Elfrana De Ridwan — Process Engineering Portfolio. Chemistry student at Universitas Indonesia." />
+  <title>Elfrana De Ridwan | Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+<!-- ── NAVBAR ──────────────────────────────────── -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#hero">EDR<span class="text-accent">.</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ms-auto gap-2">
+        <li class="nav-item"><a class="nav-link" href="#hero">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#selected-work">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ── SECTION 1: HERO / ABOUT ME ───────────────── -->
+<section id="hero" class="section-hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Photo & Contact Pills -->
+      <div class="col-lg-3 col-md-4 text-center">
+        <div class="photo-ring mx-auto">
+          <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Elfrana De Ridwan" class="img-fluid rounded-circle">
+        </div>
+        <div class="mt-4 d-flex flex-column gap-2 text-start ps-2">
+          <a href="mailto:elfrana.de@ui.ac.id" class="contact-pill">
+            <i class="bi bi-envelope-fill me-2 text-accent"></i>elfrana.de@ui.ac.id
+          </a>
+          <a href="mailto:elfranaderidwan76@gmail.com" class="contact-pill">
+            <i class="bi bi-envelope-fill me-2 text-accent"></i>elfranaderidwan76@gmail.com
+          </a>
+          <a href="https://wa.me/6289652775856" target="_blank" class="contact-pill">
+            <i class="bi bi-whatsapp me-2 text-accent"></i>+62 896-5277-5856
+          </a>
+          <a href="https://www.linkedin.com/in/elfrana-de-ridwan-ba3712145" target="_blank" class="contact-pill">
+            <i class="bi bi-linkedin me-2 text-accent"></i>LinkedIn Profile
+          </a>
+          <span class="contact-pill">
+            <i class="bi bi-geo-alt-fill me-2 text-accent"></i>Depok, Jawa Barat
+          </span>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="col-lg-9 col-md-8">
+        <h1 class="hero-name">Elfrana De Ridwan</h1>
+        <p class="hero-sub mb-2">
+          Final-year Chemistry Undergraduate &middot; Process &amp; Energy Research &middot; Data &amp; Software
+        </p>
+        <p class="hero-sub-detail mb-4">
+          A Chemistry undergraduate who applies scientific thinking through process engineering, computational modeling, data analysis, and software development.
+        </p>
+
+        <div class="bio-content">
+          <p class="bio mb-4">
+            I am a 7th-semester Chemistry undergraduate at Universitas Indonesia interested in sustainable technologies, energy systems, and technical problem-solving. During my research internship at BRIN's C-Refinery Group, I worked on reactor design and process development for CO₂ conversion to methanol, strengthening my interest in process and energy research. Alongside chemistry and engineering, I explore computational methods, data analysis, and software development to turn technical problems into practical solutions.
+          </p>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#selected-work" class="btn-primary-custom">Explore My Work <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="https://github.com/elfranar" target="_blank" class="btn-outline-accent d-inline-flex align-items-center justify-content-center">GitHub Profile <i class="bi bi-github ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Three Pillars -->
+    <div class="row g-4 mt-5">
+      <div class="col-md-4">
+        <div class="kpi-card text-center h-100 py-4 px-3">
+          <div class="fs-2 text-accent mb-2"><i class="bi bi-droplet-fill"></i></div>
+          <h5 class="fw-bold mb-2">CHEMISTRY</h5>
+          <p class="small text-muted mb-0">Laboratory &middot; Biochemistry &middot; Chemical Analysis</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="kpi-card text-center h-100 py-4 px-3">
+          <div class="fs-2 text-accent mb-2"><i class="bi bi-gear-wide-connected"></i></div>
+          <h5 class="fw-bold mb-2">ENGINEERING</h5>
+          <p class="small text-muted mb-0">Reactor Design &middot; Process Simulation &middot; CCU</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="kpi-card text-center h-100 py-4 px-3">
+          <div class="fs-2 text-accent mb-2"><i class="bi bi-code-slash"></i></div>
+          <h5 class="fw-bold mb-2">COMPUTING</h5>
+          <p class="small text-muted mb-0">Programming &middot; Backend &middot; Data Analysis</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 2: EDUCATION ──────────────────────── -->
+<section id="education" class="py-4 border-top section-alt">
+  <div class="container" style="max-width: 1000px;">
+    <div class="row align-items-center">
+      <div class="col-md-3">
+        <p class="label-tag mb-1">Education</p>
+        <h3 class="fw-bold mb-0" style="font-size: 1.5rem; font-family: var(--font-heading);">Academic Status</h3>
+      </div>
+      <div class="col-md-9 mt-3 mt-md-0">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+          <div>
+            <h5 class="fw-600 mb-1">Universitas Indonesia</h5>
+            <p class="text-muted small mb-0">
+              <i class="bi bi-mortarboard-fill me-1 text-accent"></i>Bachelor of Science in Chemistry &middot; Semester 7 (Final Year)
+            </p>
+          </div>
+          <span class="tech-badge mono-accent">2023 &mdash; Present</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 3: EXPERIENCE ─────────────────────── -->
+<section id="experience" class="py-5 border-top">
+  <div class="container" style="max-width: 1000px;">
+    <p class="label-tag mb-1">Professional Experience</p>
+    <h2 class="section-title mb-4">Research Experience</h2>
+    <div class="project-card">
+      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+        <div>
+          <div class="project-tag mb-1">BRIN (National Research and Innovation Agency)</div>
+          <h3 class="project-title mb-1" style="font-size: 1.4rem;">Research Intern &mdash; C-Refinery Group</h3>
+        </div>
+        <span class="tech-badge mono-accent">Jan 2024 &mdash; Jul 2026</span>
+      </div>
+      <p class="project-desc mb-0" style="font-size: 0.95rem; line-height: 1.75;">
+        Collaborating within the C-Refinery research group under the supervision of Dr. Ir. Herman Hidayat, M.Si. Conducting research and practical synthesis studies focused on industrial-scale CO₂ capture and chemical conversion. Involved in mathematical reactor design, kinetic modeling, and mass and energy balance simulations to evaluate process viability and optimize reactor performance for green methanol production.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 4: SELECTED WORK ─────────────────── -->
+<section id="selected-work" class="py-5 border-top section-alt">
+  <div class="container" style="max-width: 1000px;">
+    <p class="label-tag mb-1">Project Index</p>
+    <h2 class="section-title mb-3">Projects</h2>
+    <p class="text-muted mb-4">A collection of academic, research, and personal projects across chemistry, engineering, data, and software.</p>
+    
+    <div class="d-flex flex-column gap-3 mt-4">
+      
+      <!-- Flow 1: Professional Internship -->
+      <div class="flow-row p-4 bg-white border rounded">
+        <div class="row align-items-center g-3">
+          <div class="col-lg-3 col-md-4">
+            <span class="small fw-bold text-accent text-uppercase d-block mb-1">Internship</span>
+            <h5 class="fw-bold text-dark mb-0">Project Intern</h5>
+            <p class="small text-muted mb-0">BRIN C-Refinery Group</p>
+          </div>
+          <div class="col-lg-9 col-md-8 d-flex align-items-center flex-wrap gap-2">
+            <div class="flow-step">Research Intern</div>
+            <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+            <a href="#featured-research" class="flow-card-link flex-grow-1 text-decoration-none">
+              <div class="flow-card">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h6 class="fw-bold text-dark mb-1">CO₂ to Methanol Reactor Project</h6>
+                    <span class="small text-muted">Process engineering design, AutoCAD drawings, and EFB kinetics.</span>
+                  </div>
+                  <i class="bi bi-arrow-up-right-circle text-accent fs-4"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flow 2: Academic Projects -->
+      <div class="flow-row p-4 bg-white border rounded">
+        <div class="row align-items-center g-3">
+          <div class="col-lg-3 col-md-4">
+            <span class="small fw-bold text-accent text-uppercase d-block mb-1">Academic</span>
+            <h5 class="fw-bold text-dark mb-0">Academic Projects</h5>
+            <p class="small text-muted mb-0">Universitas Indonesia</p>
+          </div>
+          <div class="col-lg-9 col-md-8 d-flex align-items-center flex-wrap gap-2">
+            <div class="flow-step">UI Chemistry</div>
+            <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+            <div class="d-flex flex-column flex-sm-row gap-2 flex-grow-1">
+              <!-- Biochemistry -->
+              <a href="{{ url_for('biochemistry_project') }}" class="flow-card-link flex-fill text-decoration-none">
+                <div class="flow-card h-100">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6 class="fw-bold text-dark mb-1">Biochemistry</h6>
+                      <span class="small text-muted">Papain isolation &amp; enzyme assays.</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right-circle text-accent fs-5"></i>
+                  </div>
+                </div>
+              </a>
+              <!-- Computational Chemistry -->
+              <a href="{{ url_for('computational_chemistry_project') }}" class="flow-card-link flex-fill text-decoration-none">
+                <div class="flow-card h-100">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6 class="fw-bold text-dark mb-1">Comp. Chemistry</h6>
+                      <span class="small text-muted">MATLAB ODE kinetic modeling.</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right-circle text-accent fs-5"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flow 3: Personal Projects -->
+      <div class="flow-row p-4 bg-white border rounded">
+        <div class="row align-items-center g-3">
+          <div class="col-lg-3 col-md-4">
+            <span class="small fw-bold text-accent text-uppercase d-block mb-1">Personal</span>
+            <h5 class="fw-bold text-dark mb-0">Personal Projects</h5>
+            <p class="small text-muted mb-0">Coding &amp; Software Dev</p>
+          </div>
+          <div class="col-lg-9 col-md-8 d-flex align-items-center flex-wrap gap-2">
+            <div class="flow-step">GitHub Repos</div>
+            <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+            <a href="#software-projects" class="flow-card-link flex-grow-1 text-decoration-none">
+              <div class="flow-card">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h6 class="fw-bold text-dark mb-1">Python &amp; Flask Software Systems</h6>
+                    <span class="small text-muted">OTP verification and automated workflow solutions.</span>
+                  </div>
+                  <i class="bi bi-arrow-up-right-circle text-accent fs-4"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 5: FEATURED RESEARCH ─────────────── -->
+<section id="featured-research" class="py-5 border-top">
+  <div class="container" style="max-width: 1000px;">
+    <p class="label-tag mb-1">Featured Research</p>
+    <h2 class="section-title mb-4">Carbon Capture &amp; Utilization</h2>
+    
+    <div class="project-card">
+      <div class="project-tag">BRIN Research Project &middot; C-Refinery Group</div>
+      <h3 class="project-title" style="font-size: 1.6rem;">CO₂ to Methanol Reactor Project</h3>
+      <p class="project-desc mb-4" style="font-size: 0.98rem; line-height: 1.8;">
+        Spearheading an end-to-end Carbon Capture and Utilization (CCU) research initiative under the supervision of Dr. Ir. Herman Hidayat, M.Si. Developing a continuous Dual-Bed reactor system utilizing alkali metal carbonate-based adsorbents and Cu/ZnO/Al<sub>2</sub>O<sub>3</sub> catalysts to efficiently capture CO<sub>2</sub> and convert it into methanol.
+      </p>
+
+      <div class="spec-row">
+        <div class="spec-item">
+          <span class="spec-val">52.9 g/hr</span>
+          <span class="spec-lbl">Total mixed feed</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+          <span class="spec-val">9.5 bar</span>
+          <span class="spec-lbl">Reactor Pressure</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+          <span class="spec-val">250 °C</span>
+          <span class="spec-lbl">Reactor Temp</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+          <span class="spec-val">22.1 g/hr</span>
+          <span class="spec-lbl">Pure MeOH Output</span>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap gap-2 mb-4">
+        <span class="tech-badge">AutoCAD</span>
+        <span class="tech-badge">DWSIM</span>
+        <span class="tech-badge">Kinetic Sizing</span>
+        <span class="tech-badge">Cu/ZnO/Al₂O₃</span>
+      </div>
+
+      <a href="{{ url_for('co2_methanol_project') }}" class="btn-primary-custom">
+        View Full Engineering Analysis &amp; Drawings <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 6: ACADEMIC PROJECTS ─────────────── -->
+<section id="academic-projects" class="py-5 border-top section-alt">
+  <div class="container" style="max-width: 1000px;">
+    <p class="label-tag mb-1">Academic Projects</p>
+    <h2 class="section-title mb-4">Scientific Studies</h2>
+    
+    <div class="row g-4">
+      <!-- Biochemistry Lab -->
+      <div class="col-md-6" id="biochem-project">
+        <div class="skill-card h-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="fs-2 text-accent mb-2"><i class="bi bi-layer-backward"></i></div>
+            <h4 class="fw-bold mb-3" style="font-family: var(--font-heading);">Biochemistry Research Project</h4>
+            <p class="text-muted small" style="line-height: 1.6;">
+              A comprehensive collaborative laboratory project covering biochemistry principles and lab techniques from the initial phase to the final report. Developed in a research group to design, execute, and analyze biochemical assay tests.
+            </p>
+            <div class="mt-3">
+              <span class="small fw-bold text-accent text-uppercase letter-spacing-0.05em">Core Pipeline:</span>
+              <p class="mono-accent small text-muted mt-1 mb-0">Literature &rarr; Experimental Design &rarr; Laboratory &rarr; Data &rarr; Analysis &rarr; Report</p>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="tech-badge">Biochemistry</span>
+              <span class="tech-badge">Lab Testing</span>
+              <span class="tech-badge">Data Interpretation</span>
+            </div>
+            <a href="{{ url_for('biochemistry_project') }}" class="btn-primary-custom btn-sm w-100 d-flex align-items-center justify-content-center">
+              View Laboratory Analysis &amp; Curves <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Computational Chemistry -->
+      <div class="col-md-6" id="computational-chemistry">
+        <div class="skill-card h-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="fs-2 text-accent mb-2"><i class="bi bi-graph-up-arrow"></i></div>
+            <h4 class="fw-bold mb-3" style="font-family: var(--font-heading);">Computational Chemistry</h4>
+            <p class="text-muted small" style="line-height: 1.6;">
+              Chemical kinetic models translated into ordinary differential equations (ODEs), numerically solved and visualized to analyze the temporal behavior of chemical species. Bridges chemical science with programming workflows by converting species reactions into numerical curves.
+            </p>
+            <div class="mt-3">
+              <span class="small fw-bold text-accent text-uppercase letter-spacing-0.05em">Methodology:</span>
+              <p class="mono-accent small text-muted mt-1 mb-0">Chemical Model &rarr; ODE &rarr; Numerical Solver &rarr; Simulation &rarr; Graph &rarr; Interpretation</p>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="tech-badge">MATLAB</span>
+              <span class="tech-badge">ode45 Solver</span>
+              <span class="tech-badge">Numerical Modeling</span>
+            </div>
+            <a href="{{ url_for('computational_chemistry_project') }}" class="btn-primary-custom btn-sm w-100 d-flex align-items-center justify-content-center">
+              View MATLAB Kinetics Model <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 7: SOFTWARE & DATA ────────────────── -->
+<section id="software-projects" class="py-5 border-top">
+  <div class="container" style="max-width: 1000px;">
+    <p class="label-tag mb-1">Software &amp; Code</p>
+    <h2 class="section-title mb-4">Personal Projects</h2>
+    
+    <div class="row g-4">
+      
+      <!-- Category 1: Terminal-Based Sandbox Projects -->
+      <div class="col-lg-6">
+        <div class="p-4 bg-light border rounded h-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="badge bg-primary text-white fw-bold text-uppercase small px-2 py-1" style="font-size:0.65rem">Terminal-Based</span>
+              <span class="small text-muted fw-bold text-uppercase" style="font-size:0.7rem">Learning Sandbox</span>
+            </div>
+            <h4 class="fw-bold text-dark mb-3" style="font-family: var(--font-heading);">Backend &amp; Terminal Explorations</h4>
+            <p class="text-muted small mb-4" style="line-height: 1.6;">
+              These self-taught backend services are built as sandbox/educational experiments to explore backend API architecture, database state management, and request routing. They are run locally and monitored through terminal console streams while I continue to deepen my knowledge of full-stack systems.
+            </p>
+            
+            <div class="d-flex flex-column gap-3">
+              <!-- Project 1.1: verif-otp -->
+              <div class="p-3 bg-white border rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="fw-bold text-dark mb-0" style="font-size: 0.95rem; font-family: var(--font-heading);">verif-otp</h5>
+                  <i class="bi bi-shield-lock text-muted"></i>
+                </div>
+                <p class="text-muted small mb-3" style="font-size: 0.8rem; line-height: 1.5;">
+                  Backend authentication system managing secure OTP verification workflows with Redis caching, automatic RAM fallback, and bcrypt hashing.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex gap-1 flex-wrap">
+                    <span class="tech-badge-sm">Node.js</span>
+                    <span class="tech-badge-sm">Express</span>
+                    <span class="tech-badge-sm">Redis</span>
+                  </div>
+                  <a href="{{ url_for('otp_project') }}" class="text-decoration-none text-accent fw-bold small">
+                    View Details <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 1.2: notify (NotifyX) -->
+              <div class="p-3 bg-white border rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="fw-bold text-dark mb-0" style="font-size: 0.95rem; font-family: var(--font-heading);">notify (NotifyX)</h5>
+                  <i class="bi bi-bell text-muted"></i>
+                </div>
+                <p class="text-muted small mb-3" style="font-size: 0.8rem; line-height: 1.5;">
+                  Modular real-time notification console routing and broadcasting visual telemetry alert banners and countdown toast overlays.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex gap-1 flex-wrap">
+                    <span class="tech-badge-sm">Flask</span>
+                    <span class="tech-badge-sm">Vanilla JS</span>
+                    <span class="tech-badge-sm">Telemetry</span>
+                  </div>
+                  <a href="{{ url_for('notify_project') }}" class="text-decoration-none text-accent fw-bold small">
+                    View Details <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2: Browser-Hosted Live Projects -->
+      <div class="col-lg-6">
+        <div class="p-4 bg-light border rounded h-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="badge bg-success text-white fw-bold text-uppercase small px-2 py-1" style="font-size:0.65rem">Web-Hosted</span>
+              <span class="small text-muted fw-bold text-uppercase" style="font-size:0.7rem">Live Demos</span>
+            </div>
+            <h4 class="fw-bold text-dark mb-3" style="font-family: var(--font-heading);">Browser-Ready &amp; Client Apps</h4>
+            <p class="text-muted small mb-4" style="line-height: 1.6;">
+              These interactive client-side web applications are hosted directly on GitHub Pages. They focus on responsive user interfaces, client-side data persistence, and external REST API integrations.
+            </p>
+
+            <div class="d-flex flex-column gap-3">
+              <!-- Project 2.1: Wiki-Clone -->
+              <div class="p-3 bg-white border rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="fw-bold text-dark mb-0" style="font-size: 0.95rem; font-family: var(--font-heading);">Wiki-Clone</h5>
+                  <i class="bi bi-search text-muted"></i>
+                </div>
+                <p class="text-muted small mb-3" style="font-size: 0.8rem; line-height: 1.5;">
+                  Search portal replica featuring high-speed client-side search caching and integration of external encyclopedia API queries.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex gap-1 flex-wrap">
+                    <span class="tech-badge-sm">JavaScript</span>
+                    <span class="tech-badge-sm">API Cache</span>
+                  </div>
+                  <a href="https://elfranar.github.io/Wiki-Clone/" target="_blank" class="text-decoration-none text-accent fw-bold small">
+                    Open Live Demo <i class="bi bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 2.2: Task-Planner -->
+              <div class="p-3 bg-white border rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="fw-bold text-dark mb-0" style="font-size: 0.95rem; font-family: var(--font-heading);">Task-Planner</h5>
+                  <i class="bi bi-calendar2-check text-muted"></i>
+                </div>
+                <p class="text-muted small mb-3" style="font-size: 0.8rem; line-height: 1.5;">
+                  Productivity scheduler web application for organizing tasks, editing schedules, and persisting data in browser LocalStorage.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex gap-1 flex-wrap">
+                    <span class="tech-badge-sm">Vanilla JS</span>
+                    <span class="tech-badge-sm">LocalStorage</span>
+                  </div>
+                  <a href="https://elfranar.github.io/Task-Planner/" target="_blank" class="text-decoration-none text-accent fw-bold small">
+                    Open Live Demo <i class="bi bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 2.3: Steps-Tracker -->
+              <div class="p-3 bg-white border rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="fw-bold text-dark mb-0" style="font-size: 0.95rem; font-family: var(--font-heading);">Steps-Tracker</h5>
+                  <i class="bi bi-activity text-muted"></i>
+                </div>
+                <p class="text-muted small mb-3" style="font-size: 0.8rem; line-height: 1.5;">
+                  Health metric visualizer capturing step logs, computing averages, and rendering wellness telemetry charts.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex gap-1 flex-wrap">
+                    <span class="tech-badge-sm">JavaScript</span>
+                    <span class="tech-badge-sm">Metric Charts</span>
+                  </div>
+                  <a href="https://elfranar.github.io/Steps-Tracker/" target="_blank" class="text-decoration-none text-accent fw-bold small">
+                    Open Live Demo <i class="bi bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── SECTION 9: TECHNICAL STACK ───────────────── -->
+<section id="skills" class="py-5 border-top">
+  <div class="container" style="max-width: 1000px;">
+    <p class="label-tag mb-1">Competencies</p>
+    <h2 class="section-title mb-4">Technical Stack &amp; Tools</h2>
+
+    <div class="row g-3">
+      <!-- Column 1: Chemistry & Research -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card h-100">
+          <div class="skill-icon"><i class="bi bi-droplet-fill"></i></div>
+          <h5 class="fw-600 mt-3 mb-2">Chemistry &amp; Research</h5>
+          <ul class="skill-list">
+            <li>Biochemistry</li>
+            <li>Reaction Kinetics</li>
+            <li>Laboratory Research</li>
+            <li>Computational Chemistry</li>
+            <li>Chemical Synthesis</li>
+            <li>Instrumental Analysis</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Column 2: Process Engineering -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card h-100">
+          <div class="skill-icon"><i class="bi bi-gear-wide-connected"></i></div>
+          <h5 class="fw-600 mt-3 mb-2">Process Engineering</h5>
+          <ul class="skill-list">
+            <li>DWSIM Process Simulation</li>
+            <li>AutoCAD Technical Drafting</li>
+            <li>Reactor Sizing &amp; Design</li>
+            <li>Mass &amp; Energy Balance</li>
+            <li>CO₂ Capture &amp; Conversion</li>
+            <li>Laboratory Safety Protocols</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Column 3: Data & Scientific Computing -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card h-100">
+          <div class="skill-icon"><i class="bi bi-calculator-fill"></i></div>
+          <h5 class="fw-600 mt-3 mb-2">Data &amp; Computing</h5>
+          <ul class="skill-list">
+            <li>Python (Numerical Modeling)</li>
+            <li>MATLAB (ODE Solutions)</li>
+            <li>Excel (Data Analysis, Regression)</li>
+            <li>Numerical Simulation</li>
+            <li>Scientific Data Visualization</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Column 4: Software Development -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card h-100">
+          <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+          <h5 class="fw-600 mt-3 mb-2">Software Dev</h5>
+          <ul class="skill-list">
+            <li>JavaScript (ES6+)</li>
+            <li>Node.js Backend</li>
+            <li>Python Flask REST APIs</li>
+            <li>HTML5 &amp; CSS3 Layouts</li>
+            <li>Bootstrap 5 Frontend</li>
+            <li>Git Version Control</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ── SECTION 4: CONTACT ───────────────────────── -->
+<section id="contact" class="py-5 section-alt border-top">
+  <div class="container text-center" style="max-width: 700px;">
+    <h2 class="section-title mb-4">Contact Me</h2>
+    
+    <div class="d-flex flex-column gap-3 align-items-center">
+      <div class="d-flex align-items-center gap-2 flex-wrap justify-content-center">
+        <i class="bi bi-envelope-fill text-accent fs-5"></i>
+        <a href="mailto:elfrana.de@ui.ac.id" class="text-dark fw-500 fs-6 text-decoration-none">elfrana.de@ui.ac.id</a>
+        <span class="text-muted mx-1">|</span>
+        <a href="mailto:elfranaderidwan76@gmail.com" class="text-dark fw-500 fs-6 text-decoration-none">elfranaderidwan76@gmail.com</a>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-whatsapp text-accent fs-5"></i>
+        <a href="https://wa.me/6289652775856" target="_blank" class="text-dark fw-500 fs-6 text-decoration-none">+62 896-5277-5856</a>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-linkedin text-accent fs-5"></i>
+        <a href="https://www.linkedin.com/in/elfrana-de-ridwan-ba3712145" target="_blank" class="text-dark fw-500 fs-6 text-decoration-none">Elfrana De Ridwan</a>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-github text-accent fs-5"></i>
+        <a href="https://github.com/elfranar" target="_blank" class="text-dark fw-500 fs-6 text-decoration-none">elfranar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer class="site-footer py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2" style="max-width: 1000px;">
+    <span class="fw-600" style="color:var(--accent)">EDR<span style="color:var(--txt-muted)">.</span></span>
+    <span class="small txt-muted">Elfrana De Ridwan &copy; 2026 &mdash; All rights reserved.</span>
+    <div class="d-flex gap-3">
+      <a href="mailto:elfrana.de@ui.ac.id" class="footer-link"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://www.linkedin.com/in/elfrana-de-ridwan-ba3712145" target="_blank" class="footer-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/elfranar" target="_blank" class="footer-link"><i class="bi bi-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
