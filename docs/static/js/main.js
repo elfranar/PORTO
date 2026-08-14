@@ -1,4 +1,4 @@
-// EDR Portfolio — main.js
+// Main
 document.addEventListener('DOMContentLoaded', () => {
 
   // Active nav link on scroll
@@ -7,34 +7,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (sections.length && navLinks.length) {
     const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          navLinks.forEach(l => l.classList.remove('active'));
-          const link = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => link.classList.remove('active'));
+
+          const link = document.querySelector(
+            `.nav-link[href="#${entry.target.id}"]`
+          );
+
           if (link) link.classList.add('active');
         }
       });
     }, { threshold: 0.4 });
-    sections.forEach(s => observer.observe(s));
+
+    sections.forEach(section => observer.observe(section));
   }
 
-  // Subtle scroll-fade for project sections
-  const fadels = document.querySelectorAll('.proj-section, .kpi-card, .skill-card, .project-card, .reflect-card, .ana-card');
+  // Scroll fade
+  const fadeElements = document.querySelectorAll(
+    '.proj-section, .kpi-card, .skill-card, .project-card, .reflect-card, .ana-card'
+  );
+
   if ('IntersectionObserver' in window) {
-    fadels.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(14px)'; el.style.transition = 'opacity .4s ease, transform .4s ease'; });
+    fadeElements.forEach(element => {
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(14px)';
+      element.style.transition = 'opacity .4s ease, transform .4s ease';
+    });
+
     const fadeObs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.style.opacity = '1';
-          e.target.style.transform = 'translateY(0)';
-          fadeObs.unobserve(e.target);
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          fadeObs.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
-    fadels.forEach(el => fadeObs.observe(el));
+
+    fadeElements.forEach(element => fadeObs.observe(element));
   }
 
-  // Lightbox Modal Logic
+  // Lightbox
   const lightbox = document.getElementById('lightboxModal');
   const lightboxImg = document.getElementById('lightboxImg');
   const lightboxCap = document.getElementById('lightboxCaption');
@@ -46,18 +60,23 @@ document.addEventListener('DOMContentLoaded', () => {
       wrap.addEventListener('click', () => {
         const img = wrap.querySelector('.gallery-img');
         const cap = wrap.querySelector('.gallery-cap');
+
         if (img) {
           lightboxImg.src = img.src;
           lightboxImg.alt = img.alt;
+
           if (lightboxOpenTab) {
             lightboxOpenTab.href = img.src;
           }
+
           if (cap) {
             lightboxCap.textContent = cap.textContent;
           } else {
             lightboxCap.textContent = img.alt;
           }
+
           lightbox.style.display = 'flex';
+
           setTimeout(() => {
             lightbox.classList.add('show');
           }, 10);
@@ -67,19 +86,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const closeLightbox = () => {
       lightbox.classList.remove('show');
+
       setTimeout(() => {
         lightbox.style.display = 'none';
       }, 300);
     };
 
-    lightbox.addEventListener('click', (e) => {
-      if (e.target !== lightboxImg && e.target !== lightboxCap && e.target !== lightboxOpenTab) {
+    lightbox.addEventListener('click', event => {
+      if (
+        event.target !== lightboxImg &&
+        event.target !== lightboxCap &&
+        event.target !== lightboxOpenTab
+      ) {
         closeLightbox();
       }
     });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && lightbox.classList.contains('show')) {
+    document.addEventListener('keydown', event => {
+      if (
+        event.key === 'Escape' &&
+        lightbox.classList.contains('show')
+      ) {
         closeLightbox();
       }
     });
