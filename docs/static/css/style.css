@@ -1,6 +1,4 @@
-/* ==========================================================================
-   EDR Portfolio — Custom CSS (Bootstrap 5 Overrides)
-   ========================================================================== */
+/* Custom CSS */
 :root {
   --accent:       #1a6cf0;
   --accent-dark:  #0f4cb5;
@@ -24,7 +22,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── Utilities ────────────────────────────────── */
+/* Utilities */
 .fw-600        { font-weight: 600; }
 .text-accent   { color: var(--accent) !important; }
 .txt-muted     { color: var(--txt-muted); }
@@ -44,7 +42,7 @@ body {
   color: var(--txt);
 }
 
-/* ── Navbar ───────────────────────────────────── */
+/* Navbar */
 #mainNav {
   background: rgba(255,255,255,0.96);
   backdrop-filter: blur(8px);
@@ -88,7 +86,7 @@ body {
 }
 .btn-back:hover { color: var(--accent); }
 
-/* ── Hero / About ─────────────────────────────── */
+/* About */
 .section-hero {
   padding: 5rem 0 4rem;
   background: var(--bg);
@@ -141,7 +139,7 @@ body {
 }
 .contact-pill:hover { color: var(--accent); }
 
-/* ── KPI Cards ────────────────────────────────── */
+/* KPI Cards */
 .kpi-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -175,7 +173,7 @@ body {
   margin-top: .25rem;
 }
 
-/* ── Skills section ───────────────────────────── */
+/* Skills */
 .section-alt { background: var(--bg-alt); }
 .skill-card {
   background: var(--bg);
@@ -221,7 +219,7 @@ body {
   color: var(--accent);
 }
 
-/* ── Projects section ─────────────────────────── */
+/* Projects */
 .project-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -306,7 +304,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* Quick-spec sidebar */
+/* Quick Specs */
 .quick-spec-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -330,7 +328,7 @@ body {
 }
 .qs-val { color: var(--txt-muted); text-align: right; }
 
-/* ── Footer ───────────────────────────────────── */
+/* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
   background: var(--bg-alt);
@@ -343,9 +341,7 @@ body {
 }
 .footer-link:hover { color: var(--accent); }
 
-/* ════════════════════════════════════════════════
-   PROJECT PAGE STYLES
-   ════════════════════════════════════════════════ */
+/* Project Page */
 .project-hero {
   background: var(--bg-alt);
   border-bottom: 1px solid var(--border);
@@ -435,7 +431,7 @@ body {
   margin-bottom: 0;
 }
 
-/* Engineering bullet list */
+/* Bullet List */
 .eng-list {
   padding-left: 1.1rem;
   color: var(--txt-muted);
@@ -645,7 +641,7 @@ body {
 }
 .bom-table tbody tr:hover td { background: #f0f5ff; }
 
-/* Reflection cards */
+/* Reflection */
 .reflect-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -671,7 +667,7 @@ body {
   margin: 0;
 }
 
-/* ── Responsive ───────────────────────────────── */
+/* Responsive */
 @media (max-width: 768px) {
   .hero-name       { font-size: 2rem; }
   .proj-hero-title { font-size: 1.9rem; }
@@ -680,7 +676,7 @@ body {
   .meta-cell       { border-right: none; border-bottom: 1px solid var(--border); }
 }
 
-/* ── Custom Skill Blocks ───────────────────────── */
+/* Skill Blocks */
 .skill-block {
   text-align: left;
 }
@@ -697,14 +693,14 @@ body {
   color: var(--txt-muted);
 }
 
-/* ── Technical Monospace Helper ────────────────── */
+/* Monospace */
 .mono-accent {
   font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.85em;
   letter-spacing: -0.02em;
 }
 
-/* ── Selected Work Index ──────────────────────── */
+/* Selected Work */
 .selected-work-list {
   display: flex;
   flex-direction: column;
@@ -764,7 +760,7 @@ body {
   }
 }
 
-/* ── Software Projects Grid ────────────────────── */
+/* Software Projects */
 .software-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -817,7 +813,7 @@ body {
   margin-top: auto;
 }
 
-/* Additional Software Projects (Compact) */
+/* Additional Projects */
 .additional-projects-title {
   font-family: var(--font-heading);
   font-size: 1.1rem;
@@ -866,136 +862,7 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* ── My Approach (Scientific Workflow) ─────────── */
-.approach-pipeline {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  position: relative;
-  margin-top: 2rem;
-}
-.approach-step {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.5rem 1.25rem;
-  position: relative;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  text-align: left;
-}
-.approach-step:hover {
-  border-color: var(--accent);
-  box-shadow: 0 4px 15px rgba(26,108,240,.06);
-}
-.approach-num {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--accent);
-  line-height: 1;
-  margin-bottom: 0.75rem;
-}
-.approach-title {
-  font-family: var(--font-heading);
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--txt);
-  margin-bottom: 0.5rem;
-}
-.approach-desc {
-  font-size: 0.8rem;
-  line-height: 1.5;
-  color: var(--txt-muted);
-  margin: 0;
-}
-@media (min-width: 992px) {
-  .approach-step:not(:last-child)::after {
-    content: "→";
-    position: absolute;
-    right: -0.75rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.25rem;
-    color: var(--border);
-    z-index: 2;
-    pointer-events: none;
-  }
-}
-@media (max-width: 991px) {
-  .approach-pipeline {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-}
-
-/* ── Beyond Chemistry GitHub Promo Card ────────── */
-.github-promo-card {
-  background: #0d1117;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius);
-  padding: 2.5rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  transition: border-color 0.3s, box-shadow 0.3s;
-  color: #c9d1d9;
-  margin-top: 1.5rem;
-}
-.github-promo-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 0 25px rgba(26,108,240,.2);
-}
-.github-promo-title {
-  font-family: var(--font-heading);
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-.github-promo-subtitle {
-  font-size: 0.95rem;
-  color: #8b949e;
-  max-width: 520px;
-  margin: 0 auto 1.5rem;
-  line-height: 1.5;
-}
-.github-promo-meta {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 6px;
-  padding: 1rem 1.5rem;
-  margin-bottom: 1.75rem;
-}
-.github-promo-url {
-  font-size: 1.05rem;
-  color: var(--accent);
-  font-weight: 600;
-  text-decoration: none;
-  font-family: SFMono-Regular, Consolas, monospace;
-}
-.github-promo-url:hover {
-  text-decoration: underline;
-}
-.github-promo-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #8b949e;
-}
-.github-promo-stack {
-  font-size: 0.8rem;
-  font-family: SFMono-Regular, Consolas, monospace;
-  color: #58a6ff;
-}
-
-/* Flow Section Styling */
+/* Flow */
 .flow-row {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
