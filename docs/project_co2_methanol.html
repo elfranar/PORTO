@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="CO2 to Methanol Reactor Project — Process Engineering, AutoCAD, DWSIM. Elfrana De Ridwan, BRIN C-Refinery Group." />
   <title>CO₂ → Methanol Reactor | Elfrana De Ridwan</title>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +13,7 @@
 </head>
 <body data-leaching-data-url="static/data/leaching_data.json">
 
-<!-- ── NAVBAR ─────────────────────────────────── -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">EDR<span class="text-accent">.</span></a>
@@ -24,14 +23,14 @@
   </div>
 </nav>
 
-<!-- ── PROJECT HEADER ─────────────────────────── -->
+<!-- HEADER -->
 <section class="project-hero">
   <div class="container" style="max-width:960px;">
     <p class="label-tag mb-2">BRIN Research &bull; C-Refinery Group</p>
     <h1 class="proj-hero-title">CO₂ to Methanol<br>Reactor Project</h1>
     <p class="proj-hero-sub">Designed &middot; Analyzed &middot; Evaluated</p>
 
-    <!-- Meta strip -->
+    <!-- Meta -->
     <div class="meta-strip row g-0 mt-4">
       <div class="col-6 col-md-3 meta-cell">
         <div class="meta-key">Role</div>
@@ -52,24 +51,22 @@
     </div>
   </div>
 </section>
-
 <div class="container py-5" style="max-width:960px;">
 
-  <!-- Initial Project Description -->
+  <!-- Description -->
   <div class="mb-5 p-4 bg-light border-start border-primary border-3 rounded">
     <p class="lead mb-0 text-dark" style="font-size: 1.05rem; line-height: 1.6;">
       Spearheading an end-to-end Carbon Capture and Utilization (CCU) research initiative under the supervision of Dr. Ir. Herman Hidayat, M.Si. Developing a continuous Dual-Bed reactor system utilizing alkali metal carbonate-based adsorbents and Cu/ZnO/Al<sub>2</sub>O<sub>3</sub> catalysts to efficiently capture CO<sub>2</sub> and convert it into methanol.
     </p>
   </div>
 
-  <!-- ── 1. PROCESS OVERVIEW ──────────────────── -->
+  <!-- OVERVIEW -->
   <section class="proj-section">
     <div class="section-label"><span>01</span> Process Overview</div>
     <div class="img-frame mb-4">
       <img src="static/images/reactor_system_pfd.png" alt="Reactor System PFD" class="img-fluid">
     </div>
     <p class="img-caption">Fig. 1 — Diagram Alir Proses Sistem Reaktor (AutoCAD PFD Drawing)</p>
-
     <ul class="eng-list mt-3">
       <li><strong>MFC Mass Flow Control:</strong> Feed streams of CO₂ (44.01 g/hr), H₂ (6.05 g/hr), and N₂ (2.80 g/hr) are controlled using three Mass Flow Controllers (MFC) to maintain a precise stoichiometric H₂:CO₂ reactant ratio of 3:1 before mixing.</li>
       <li><strong>Gas Conditioning:</strong> The mixed gas enters the Guard Bed at 10 bar, experiencing a 0.5 bar pressure drop (outlet pressure: 9.5 bar, temperature: 23.3 °C) due to sulfur-filter packing resistance. It is then routed through a copper pre-heating coil, preheating it to the reactor inlet temperature of 250 °C (pre-heating duty: 8.35 W).</li>
@@ -80,10 +77,9 @@
     </ul>
   </section>
 
-  <!-- ── 2. ENGINEERING ANALYSIS ──────────────── -->
+  <!-- ANALYSIS -->
   <section class="proj-section">
     <div class="section-label"><span>02</span> Engineering Analysis</div>
-
     <div class="row g-3">
       <!-- Mass balance -->
       <div class="col-md-6 col-lg-3">
@@ -148,10 +144,9 @@
     </div>
   </section>
 
-  <!-- ── 3. REACTOR DESIGN INSIGHT ────────────── -->
+  <!-- REACTOR DESIGN -->
   <section class="proj-section">
     <div class="section-label"><span>03</span> Reactor Design Insight</div>
-
     <div class="row g-4 align-items-start">
       <div class="col-md-5">
         <div class="img-frame mb-2">
@@ -177,7 +172,7 @@
     </div>
   </section>
 
-  <!-- ── 4. EFB LEACHING KINETICS ────────────── -->
+  <!-- EFB LEACHING KINETICS -->
   <section class="proj-section">
     <div class="section-label"><span>04</span> EFB Leaching Kinetics Modeling</div>
     <div class="mb-4">
@@ -186,7 +181,7 @@
       </p>
     </div>
 
-    <!-- Controls Row -->
+    <!-- Controls -->
     <div class="row g-3 mb-4">
       <div class="col-md-6">
         <label for="efbSelector" class="form-label small fw-bold text-muted text-uppercase">Select EFB Size</label>
@@ -214,7 +209,7 @@
       </div>
     </div>
 
-    <!-- Chart & Parameter Panel Row -->
+    <!-- Chart & Parameter -->
     <div class="row g-4 mb-4">
       <!-- Chart Column -->
       <div class="col-lg-7">
@@ -229,11 +224,10 @@
         </div>
       </div>
 
-      <!-- Parameter Card Column -->
+      <!-- Parameter Column -->
       <div class="col-lg-5">
         <div class="ana-card h-100 bg-white border rounded p-4">
           <h5 class="fw-bold mb-3 text-dark border-bottom pb-2"><i class="bi bi-calculator-fill me-2 text-accent"></i>Kinetic Parameters</h5>
-          
           <div class="row g-2 mb-3">
             <div class="col-6">
               <div class="p-2 bg-light rounded text-center">
@@ -248,7 +242,6 @@
               </div>
             </div>
           </div>
-
           <table class="table table-sm table-borderless small mb-0">
             <tbody>
               <tr>
@@ -276,9 +269,8 @@
       </div>
     </div>
 
-    <!-- Data Table & EFB Summary Row -->
+    <!-- Data Table & EFB -->
     <div class="row g-4 mb-4">
-      <!-- Data Table Column -->
       <div class="col-md-5">
         <div class="ana-card bg-white border rounded p-3 h-100">
           <div class="small fw-bold text-muted text-uppercase mb-2"><i class="bi bi-table me-1 text-accent"></i>Raw Data Table</div>
@@ -293,14 +285,14 @@
                 </tr>
               </thead>
               <tbody id="rawTableBody">
-                <!-- Dynamically populated -->
+                <!-- Dynamically -->
               </tbody>
             </table>
           </div>
         </div>
       </div>
 
-      <!-- General Info Column -->
+      <!-- General Info -->
       <div class="col-md-7">
         <div class="ana-card bg-light border-start border-primary border-3 p-4 h-100">
           <h5 class="fw-bold mb-2 text-dark"><i class="bi bi-info-circle-fill me-2 text-primary"></i>Model Characteristics</h5>
@@ -315,7 +307,7 @@
       </div>
     </div>
 
-    <!-- EFB All Metals Summary Table -->
+    <!-- EFB All Metals Table -->
     <div class="ana-card bg-white border rounded p-4">
       <div class="d-flex justify-content-between align-items-center mb-3">
         <h5 class="fw-bold mb-0 text-dark"><i class="bi bi-list-stars me-2 text-accent"></i>Kinetics Parameters Summary for Selected Particle Size</h5>
@@ -335,14 +327,14 @@
             </tr>
           </thead>
           <tbody id="summaryTableBody">
-            <!-- Dynamically populated -->
+            <!-- Dynamically -->
           </tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- ── 5. MATERIAL & SAFETY CONSIDERATION ───── -->
+  <!-- MATERIAL & SAFETY CONSIDERATION -->
   <section class="proj-section">
     <div class="section-label"><span>05</span> Material &amp; Safety Consideration</div>
     <div class="row g-3">
@@ -369,7 +361,7 @@
     </div>
   </section>
 
-  <!-- ── 6. CAD & ENGINEERING DRAWINGS ────────── -->
+  <!-- CAD & ENGINEERING DRAWINGS -->
   <section class="proj-section">
     <div class="section-label"><span>06</span> CAD &amp; Engineering Drawings</div>
     <div class="row g-3">
@@ -406,7 +398,7 @@
     </div>
   </section>
 
-  <!-- ── 7. BILL OF MATERIALS (BOM) ────────────── -->
+  <!-- BILL OF MATERIALS (BOM) -->
   <section class="proj-section">
     <div class="section-label"><span>07</span> Bill of Materials (BOM)</div>
     <div class="table-responsive">
@@ -443,7 +435,7 @@
     </div>
   </section>
 
-  <!-- ── 8. REFLECTION & IMPROVEMENT ──────────── -->
+  <!-- REFLECTION & IMPROVEMENT -->
   <section class="proj-section" style="border:none;">
     <div class="section-label"><span>08</span> Reflection &amp; Improvement</div>
     <div class="row g-3 mb-5">
@@ -476,7 +468,7 @@
       </div>
     </div>
 
-    <!-- Navigate to Skills Button -->
+    <!-- Skills Button -->
     <div class="text-center py-4 border-top">
       <a href="index.html#skills" class="btn-primary-custom px-4 py-2" style="font-size: 1rem;">
         Continue to My Skills <i class="bi bi-arrow-right ms-2"></i>
@@ -484,7 +476,7 @@
     </div>
   </section>
 
-</div><!-- /container -->
+</div><!-- container -->
 
 <footer class="site-footer py-4 mt-5">
   <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2" style="max-width:960px;">
@@ -498,7 +490,7 @@
   </div>
 </footer>
 
-<!-- Lightbox Modal -->
+<!-- Lightbox -->
 <div id="lightboxModal" class="lightbox-modal">
   <div class="lightbox-content-wrap">
     <img id="lightboxImg" src="" alt="">
